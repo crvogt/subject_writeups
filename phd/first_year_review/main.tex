@@ -1,0 +1,230 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[tmargin=2cm, lmargin=4cm, rmargin=2.5cm, bmargin=4cm, paperwidth=8.267in, paperheight=11.692in]{geometry}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{indentfirst}
+\graphicspath{ {images/} }
+\usepackage{lipsum}
+\usepackage{verbatim}
+\usepackage{titlepic}
+\usepackage{amsmath}
+%\usepackage{titlesec}
+
+\begin{document}
+
+\title{Light Field Research \vspace{2.5cm}}	%\includegraphics[scale=0.2]{university_edinburgh.jpg}
+\author{
+\Large Carson Vogt \vspace{1cm} \\ 
+}
+
+\date{
+	\centering
+	PhD \endgraf\medskip
+	Heriot-Watt University \endgraf\medskip
+	31 August 2015
+}
+
+\maketitle
+
+\begin{abstract}
+\begin{small}
+abstract
+\end{small}
+\end{abstract}
+
+\listoffigures
+
+\tableofcontents
+
+\chapter{Introduction}
+What is your hypothesis
+
+Current light field technology is built on the parameterization put forward by Levoy in 1996. If we go back just five years to the original paper regarding the plenoptic function, we see a critical element missing from the the function: time. There are two major problems associated with light fields currently. The method for data collection is often bulky or slow and limited in its capabilities (cite the papers). The other issue is that it requires a static scene. 
+
+We aim to not only improve on the work of (unstructured light fields), but to develop a system that can take time into account for a dynamic light field experience. 
+
+Light fields are a rising method for rendering scenes. With the rising popularity of virtual reality, light field technology has the potential to revolutionize the way in which viewers interact with subjects of interest, like sports matches.
+
+WE want to create a system that can capture a light field and effectively turn it back into a 5D problem, where time is one of the specified parameters
+
+\chapter*{2 Review of Light Field Research}
+The concept behind the light field goes back hundreds of years, stemming from *da Vinci(?)s work with pinhole cameras that allowed him to understand light at a point, a pencil
+However, it was still not referred to as such. 
+Plenoptic function \cite{Adelson91} is a function that describes all of the light in a scene
+(Go through the derivation for the plenoptic function)
+
+Even after the seminal Light Field Rendering paper, Plenoptic imaging continued
+
+With \emph{Light Field Rendering}, a more reasonable and computable description of the plenoptic function was created in the form of the 4D light field
+
+parameterizations varied
+
+Isaksen's dynamic reparameterization
+
+It's not until 2012 that we see unstructured light fields
+
+\section*{Methods for Collection}
+The light field camera, shown in \cite{Ng06} is an interesting device that makes use of modern CCDs(acronym?)
+Insert image of one here
+
+Minimizing the amount required to collect(cite review and actual article)
+Move on to the more recent papers of Sparse lightfields and learning 
+based view synthesis
+
+Unstructured light fields paper also shows a method for collection utilizing a single camera and a SLAM algorithm known as PTAM(cite PTAM paper). Of course, this research is now a bit aged and can be improved in a number of ways, potentially expanding it significantly with the addition of a more robust and wide-ranging(?) SLAM method such as ORB-SLAM2(cite)
+
+
+\chapter{Work Done}
+\section{Comparison of Platforms}
+\section{SLAM}
+
+\chapter{Proposed Research}
+\section{steps}
+Looking at the work utilizing SLAM in unstructured light fields and improving upon it by initially using the superior ORB-SLAM technique, then further by applying the methodology to 
+\begin{thebibliography}{10}%Any two digit number for more than nine references
+
+\bibitem{Adelson91}
+	Adelson, Edward H. (1991). \emph{The Plenoptic Function and Elements of Early Vision}
+
+\bibitem{Chai00}
+	\emph{Plenoptic Sampling}
+
+\bibitem{Davis12}
+	\emph{Unstructured Light Fields}
+
+\bibitem{Gortler96}
+	\emph{The Lumigraph}
+	
+\bibitem{Ihrke16}
+	\emph{Principles of Light Field Imaging}	
+	
+\bibitem{Isaksen01}
+	\emph{Dynamically Reparameterized Light Fields}
+
+\bibitem{Jachnik13}
+	\emph{Real-Time Surface Light-field Capture for Augmentation of Planar Specular Surfaces}
+
+\bibitem{Kalantari16}
+	\emph{Learning-Based View Synthesis for Light Field Cameras}
+
+\bibitem{Katayama95}
+	\emph{A Viewpoint Dependent Stereoscopic Display Using Interpolation of Multi-Viewpoint Images}
+	
+\bibitem{Levoy96}
+	\emph{Light Field Rendering}
+	
+\bibitem{McMillan95}
+	\emph{Plenoptic Modelling: An Image-Based Rendering System}
+
+\bibitem{Ng06}
+	\emph{Digital Light Field Photography}	
+
+\bibitem{Oberlin16}
+	\emph{Time-Lapse Light Field Photography With a 7 DoF Arm}
+
+\bibitem{Shi}
+	\emph{Light Field Reconstruction in the Continuous Fourier Domain}
+
+\bibitem{Shum01}
+	\emph{A Review of Image-based Rendering Techniques}
+	
+	add ptam, orb-slam, 
+
+
+
+
+\begin{comment}
+\bibitem{Anderson01}
+	Anderson, Jr., J.D. (2001). \emph{Fundamentals of Aerodynamics} McGraw Hill
+
+\bibitem{Ariff11}
+	Ariff, O.K. and Go, T.H. (2011). \emph{Waypoint Navigation of Small-Scale UAV incorporating Dynamic Soaring} The Journal of Navigation
+
+\bibitem{Bailey97}
+	Bailey, B.H., McDonald, S.L., Bernadett, D.W., Markus, M.J. and Elsholz, K.V. (1997). \emph{Wind Resource Assessment Handbook} National Renewable Energy Laboratory
+
+\bibitem{Barthelmie14}
+	Barthelmie, R.J., Crippa, P., Wang, H., Smith, C.M., Krishnamurthy, R., Choukulkar, A., Calhoun, R. et al (2014). \emph{3D Wind and Turbulence Characteristics of the Atmospheric Boundary Layer} American Meteorlogical Society
+
+\bibitem{Bohling05}
+	Bohling, Geoff (2005). \emph{Kriging},
+http://people.ku.edu/~gbohling/cpe940/ Kriging.pdf
+	
+\bibitem{Bretherton75}
+	Bretherton, F.P., Davis, R.E., and Fandry, C.B. (1975). \emph{A technique for objective analysis and design of oceanographic experiments applied to MODE-73} Deep-Sea Research
+	
+\bibitem{Brezoescu13}
+	Brezoescu, A., Castillo, P. and Lozano, R. (2013). \emph{Wind estimation for accurate airplane path following applications} International Conference on Unmanned Aircraft Systems	
+	
+\bibitem{Cully15}
+	Cully, A., Clune, J., Tarapore, D., and Mouret, J. (2015). \emph{Robots that can adapt like animals} Nature	
+	
+\bibitem{Duda01}
+	Duda, R.O., Hart, P.E. and Stork, D.G. (2001). \emph{Pattern Classification: Second Edition} Wiley-Interscience
+	
+\bibitem{Duvenaud14}
+	Duvenaud, D.K. (2014). \emph{Automatic Model Construction with Gaussian Processes} University of Cambridge, Pembroke College
+
+\bibitem{Gorman08}
+	Gorman, R.M. (2008). \emph{Intercomparison of Methods for the Temporal Interpolation of Synoptic Wind Fields} Journal of Atmospheric and Oceanic Technology
+	
+\bibitem{Hemakumara13}
+	Hemakumara, P. and Sukkarieh, S. (2013). \emph{Learning UAV Stability and Control Derivatives Using Gaussian Processes} IEEE Transaction on Robotics
+
+\bibitem{Kan13}
+	Kan, E.M., Lim, M.H., Ong, Y.S., Tan, A.H. and Yeo, S.P. \emph{Extreme learning machine terrain-based navigation for unmanned aerial vehicles} Neural Computation and Applications
+
+\bibitem{Kothari14}
+	Kothari, M., Postlethwaite, I. and Gu, D. (2014). \emph{UAV Path Following in Windy Urban Environments} Journal of Intelligent Robotic Systems
+
+\bibitem{Krause10}
+	Krause, A. (2010) \emph{Advanced Topics in Machine Learning} Lecture given at Caltech for CS/EE 253, Feb 24, 2010
+
+\bibitem{Kuroki09}
+	Kuroki, Y., Young, G.S. and Haupt, S.E. (2009). \emph{UAV navigation by an expert system for contaminant mapping with a genetic algorithm} Expert Systems with Applications
+
+\bibitem{Lega10}
+	Lega, M. and Napoli, R.M.A. (2010) \emph{Aerial infrared thermography in the surface waters contamination monitoring} Desalination and Water Treatment
+
+\bibitem{Leidwanger13}
+	Leidwanger, J. (2013). \emph{Modeling distance with time in ancient Mediterranean seafaring: a GIS application for the interpretation of maritime connectivity} Journal of Archaeological Science
+
+\bibitem{Leonard10}
+	Leonard, N.E., Paley, D.A., Davis, R.E., Fratantoni, D.M., Lekien, F. and Zhang, F. (2010) \emph{Coordinated Control of an Underwater Glider Fleet in an Adaptive Ocean Sampling Field Experiment in Monterey Bay} Journal of Field Robotics
+	 
+\bibitem{Liu13}
+	Liu, B., Luo, X. and Wei, H. (2013). \emph{Research on the Method of Wind Speed Interpolation: Based on Spaitally Anisotropic Analysis} International Conference on Mechatronic Sciences, Electrical Engineering, and Computer Engineering
+
+\bibitem{Nelson07}
+	Nelson, D.R., Barber, D.B., McLain, T.W. and Beard, R.W. (2007). \emph{Vector Field Path Following for Miniature Air Vehicles} IEEE Transactions on Robotics
+
+\bibitem{NOAA15} 
+	NOAA \emph{Numeric Weather Prediction} https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/numerical-weather-prediction
+
+\bibitem{Parasuraman09}
+	Parasuraman, R., Cosenzo, K.A. and De Visser, E. (2009) \emph{Adaptive Automation for Human Supervision of Multiple Uninhabited Vehicles: Effects on Change Detection, Situation Awareness, and Mental Workload} Military Psychology
+
+\bibitem{Peacock13}
+	Peacock, T. and Haller, G. (2013) \emph{Lagrangian coherent structures: The hidden skeleton of fluid flows} Physics Today
+
+\bibitem{Rasmussen96}
+	Rasmussen, C.E. (1996) \emph{Evaluation of Gaussian Processes and Other Methods for Non-Linear Regression} Graduate Department of Computer Science, University of Toronto
+
+\bibitem{Rasmussen06}
+	Rasmussen, C. E. and Williams, C. K. I. (2006) \emph{Gaussian Processes for Machine Learning} MIT Press
+	
+\bibitem{Saljic12}
+	Saljic, N. (2012) \emph{Majestic Matterhorn Portraits by Nenad Saljic} from \texttt{www.mymodernmet.com/profiles/blogs/nenad-saljic-matterhorn-portraits}
+	
+\bibitem{Shie13}
+	Shie, R. and Chan, C. (2013). \emph{Tracking hazardous air pollutants from a refinery fire by applying on-line and off-line air monitoring and back trajectory modeling} Journal of Hazardous Materials	
+	
+\bibitem{Smidl12}
+	Smidl, V. and Hofman, R. (2012). \emph{Navigation of UAVs for Tracking of Atmospheric Release of Radiation} 51st IEEE Conference on Decision and Control	
+	
+\end{comment}
+\end{thebibliography}
+
+\end{document}
