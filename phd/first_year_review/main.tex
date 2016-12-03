@@ -41,6 +41,12 @@ abstract
 \chapter{Introduction}
 What is your hypothesis
 
+"There are many potential formats which could be used for VR video.
+Lightfields [Levoy and Hanrahan 1996] provide the greatest level of
+immersion if they can be captured for a suitable volume"
+
+"...a practical solution for this has not yet been demonstrated"
+
 Current light field technology is built on the parameterization put forward by Levoy in 1996. If we go back just five years to the original paper regarding the plenoptic function, we see a critical element missing from the the function: time. There are two major problems associated with light fields currently. The method for data collection is often bulky or slow and limited in its capabilities (cite the papers). The other issue is that it requires a static scene. 
 
 We aim to not only improve on the work of (unstructured light fields), but to develop a system that can take time into account for a dynamic light field experience. 
@@ -76,6 +82,12 @@ based view synthesis
 Unstructured light fields paper also shows a method for collection utilizing a single camera and a SLAM algorithm known as PTAM(cite PTAM paper). Of course, this research is now a bit aged and can be improved in a number of ways, potentially expanding it significantly with the addition of a more robust and wide-ranging(?) SLAM method such as ORB-SLAM2(cite)
 
 
+ADD FIGURE OF LYTRO CINEMA CAM AND JUMP CAMERA
+
+The current trend for light field cameras seems to be going in the direction of multi-camera mobile aparatus, as shown in figure(blah?)
+The use cases for these capture methods are limited. 
+
+
 \chapter{Work Done}
 \section{Comparison of Platforms}
 \section{SLAM}
@@ -83,10 +95,22 @@ Unstructured light fields paper also shows a method for collection utilizing a s
 \chapter{Proposed Research}
 \section{steps}
 Looking at the work utilizing SLAM in unstructured light fields and improving upon it by initially using the superior ORB-SLAM technique, then further by applying the methodology to 
+
+PR2 image
+
+Show ardrone image
+
+While there are existing drones that can easily be controlled from the computer and capture data, there is clear lag high risk of data loss due to the transmission method (wifi). Instead, I would propose to make some simple modifications that would allow data capture and control in real time.
+Drone Image + hardware
+
+
 \begin{thebibliography}{10}%Any two digit number for more than nine references
 
 \bibitem{Adelson91}
 	Adelson, Edward H. (1991). \emph{The Plenoptic Function and Elements of Early Vision}
+
+\bibitem{Anderson16}
+	\emph{Jump: Virtual Reality Video}
 
 \bibitem{Chai00}
 	\emph{Plenoptic Sampling}
@@ -105,6 +129,9 @@ Looking at the work utilizing SLAM in unstructured light fields and improving up
 
 \bibitem{Jachnik13}
 	\emph{Real-Time Surface Light-field Capture for Augmentation of Planar Specular Surfaces}
+	
+\bibitem{Joubert15}
+	\emph{An Interactive Tool for Designing Quadrotor Camera Shots}
 
 \bibitem{Kalantari16}
 	\emph{Learning-Based View Synthesis for Light Field Cameras}
