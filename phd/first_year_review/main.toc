@@ -1,6 +1,2 @@
-\contentsline {chapter}{\numberline {1}Introduction}{3}
-\contentsline {chapter}{\numberline {2}Work Done}{5}
-\contentsline {section}{\numberline {2.1}Comparison of Platforms}{5}
-\contentsline {section}{\numberline {2.2}SLAM}{5}
-\contentsline {chapter}{\numberline {3}Proposed Research}{6}
-\contentsline {section}{\numberline {3.1}steps}{6}
+\contentsline {section}{\numberline {0.1}First Step: Unstructured Light Fields with Robots}{11}
+\contentsline {section}{\numberline {0.2}Second Step: Capturing Light Fields in Time}{11}

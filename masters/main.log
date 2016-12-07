@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.17)  28 NOV 2016 12:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.12.1)  5 DEC 2016 20:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+Babel <3.9h> and hyphenation patterns for 4 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -319,11 +319,19 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count92
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks20
 \verbatim@line=\toks21
 \verbatim@in@stream=\read1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlepic/titlepic.sty
+Package: titlepic 2009/08/03 1.1 Package to display a picture on the title page
+
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
@@ -345,13 +353,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count92
+\inf@bad=\count93
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count93
-\leftroot@=\count94
+\uproot@=\count94
+\leftroot@=\count95
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count95
-\DOTSCASE@=\count96
+\classnum@=\count96
+\DOTSCASE@=\count97
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -360,15 +368,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen117
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count97
-\c@MaxMatrixCols=\count98
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
 \dotsspace@=\muskip10
-\c@parentequation=\count99
-\dspbrk@lvl=\count100
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
 \tag@help=\toks23
-\row@=\count101
-\column@=\count102
-\maxfields@=\count103
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
 \andhelp@=\toks24
 \eqnshift@=\dimen118
 \alignsep@=\dimen119
@@ -382,6 +390,18 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \mathdisplay@stack=\toks26
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box28
+\beforetitleunit=\skip48
+\aftertitleunit=\skip49
+\ttl@plus=\dimen124
+\ttl@minus=\dimen125
+\ttl@toksa=\toks27
+\titlewidth=\dimen126
+\titlewidthlast=\dimen127
+\titlewidthfirst=\dimen128
 ) (./main.aux)
 \openout1 = `main.aux'.
 
@@ -400,17 +420,17 @@ LaTeX Font Info:    ... okay on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen124
-\scratchbox=\box28
-\nofMPsegments=\count105
-\nofMParguments=\count106
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen125
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count105
+\scratchdimen=\dimen129
+\scratchbox=\box29
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen130
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -489,28 +509,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-! Undefined control sequence.
-l.18 \titlepic
-              {\includegraphics[scale = 0.55]{university_edinburgh.jpg}}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<images/university_edinburgh.jpg, id=1, 198.0198pt x 200.9106pt>
-File: images/university_edinburgh.jpg Graphic file (type jpg)
-
-<use images/university_edinburgh.jpg>
-Package pdftex.def Info: images/university_edinburgh.jpg used on input line 18.
-
-(pdftex.def)             Requested size: 108.91122pt x 110.50116pt.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/university_edinbu
-rgh.jpg>]
 LaTeX Font Info:    Try loading font information for U+msa on input line 48.
-
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -518,16 +517,27 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1] [1] [1
+)
+<images/university_edinburgh.jpg, id=1, 198.0198pt x 200.9106pt>
+File: images/university_edinburgh.jpg Graphic file (type jpg)
 
-]
-(./main.lof)
+<use images/university_edinburgh.jpg>
+Package pdftex.def Info: images/university_edinburgh.jpg used on input line 48.
+
+(pdftex.def)             Requested size: 108.91122pt x 110.50116pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/university_edinbu
+rgh.jpg>] [1] [1
+
+] (./main.lof)
 \tf@lof=\write3
 \openout3 = `main.lof'.
 
  [2
 
-] (./main.toc)
+]
+(./main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -536,36 +546,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 Chapter 1.
 
-LaTeX Warning: File `swarmPlanes.jpg' not found on input line 81.
+LaTeX Warning: Reference `fig:plane_swarm' on page 4 undefined on input line 76
+.
 
-
-! Package pdftex.def Error: File `swarmPlanes.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.81 ...cludegraphics[scale=0.07]{swarmPlanes.jpg}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<images/kevin_flight.png, id=26, 1057.9525pt x 761.84625pt>
+<images/kevin_flight.png, id=23, 1057.9525pt x 761.84625pt>
 File: images/kevin_flight.png Graphic file (type png)
 
 <use images/kevin_flight.png>
 Package pdftex.def Info: images/kevin_flight.png used on input line 87.
 (pdftex.def)             Requested size: 179.84955pt x 129.51215pt.
 
-<images/Matterhorn_Wind.jpg, id=27, 602.25pt x 401.5pt>
+<images/Matterhorn_Wind.jpg, id=24, 602.25pt x 401.5pt>
 File: images/Matterhorn_Wind.jpg Graphic file (type jpg)
 
 <use images/Matterhorn_Wind.jpg>
 Package pdftex.def Info: images/Matterhorn_Wind.jpg used on input line 96.
 (pdftex.def)             Requested size: 271.01pt x 180.67332pt.
 
-<images/wind_monitoring_system.jpg, id=28, 234.8775pt x 462.528pt>
+<images/wind_monitoring_system.jpg, id=25, 234.8775pt x 462.528pt>
 File: images/wind_monitoring_system.jpg Graphic file (type jpg)
 
 <use images/wind_monitoring_system.jpg>
@@ -576,7 +574,7 @@ Package pdftex.def Info: images/wind_monitoring_system.jpg used on input line 1
 
  <./images/kevin_flight.png>]
 [5 <./images/Matterhorn_Wind.jpg>] [6 <./images/wind_monitoring_system.jpg>]
-[7] <images/ash_cloud.png, id=44, 383.4325pt x 454.69875pt>
+[7] <images/ash_cloud.png, id=40, 383.4325pt x 454.69875pt>
 File: images/ash_cloud.png Graphic file (type png)
 
 <use images/ash_cloud.png>
@@ -584,7 +582,7 @@ Package pdftex.def Info: images/ash_cloud.png used on input line 138.
 (pdftex.def)             Requested size: 191.71577pt x 227.34882pt.
  [8] [9 <./images/ash_cloud.png>]
 Chapter 2.
-<images/planeOnTable.jpg, id=54, 2601.72pt x 1951.29pt>
+<images/planeOnTable.jpg, id=50, 2601.72pt x 1951.29pt>
 File: images/planeOnTable.jpg Graphic file (type jpg)
 
 <use images/planeOnTable.jpg>
@@ -606,7 +604,7 @@ Chapter 3.
 [13
 
 ]
-<images/Gaussian_Process_Illustration.jpg, id=73, 1076.02pt x 645.41125pt>
+<images/Gaussian_Process_Illustration.jpg, id=70, 1076.02pt x 645.41125pt>
 File: images/Gaussian_Process_Illustration.jpg Graphic file (type jpg)
 
 <use images/Gaussian_Process_Illustration.jpg>
@@ -614,7 +612,7 @@ Package pdftex.def Info: images/Gaussian_Process_Illustration.jpg used on input
  line 269.
 (pdftex.def)             Requested size: 322.8085pt x 193.62486pt.
  [14] [15 <./images/Gaussian_Process_Illustration.jpg>]
-<images/flow_views.png, id=83, 1645.14626pt x 612.2875pt>
+<images/flow_views.png, id=80, 1645.14626pt x 612.2875pt>
 File: images/flow_views.png Graphic file (type png)
 
 <use images/flow_views.png>
@@ -634,7 +632,7 @@ converted-to.pdf images/System_Diagram.eps>
 (epstopdf)             \includegraphics on input line 341.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/System_Diagram-eps-converted-to.pdf, id=91, 1552.80125pt x 920.43875pt>
+<images/System_Diagram-eps-converted-to.pdf, id=88, 1552.80125pt x 920.43875pt>
 File: images/System_Diagram-eps-converted-to.pdf Graphic file (type pdf)
 <use images/System_Diagram-eps-converted-to.pdf>
 Package pdftex.def Info: images/System_Diagram-eps-converted-to.pdf used on inp
@@ -643,7 +641,7 @@ ut line 341.
  [18
 
  <./images/System_Diagram-eps-converted-to.pdf>]
-<images/mavros_rqt_graph.png, id=101, 397.485pt x 889.3225pt>
+<images/mavros_rqt_graph.png, id=98, 397.485pt x 889.3225pt>
 File: images/mavros_rqt_graph.png Graphic file (type png)
 
 <use images/mavros_rqt_graph.png>
@@ -652,7 +650,7 @@ Package pdftex.def Info: images/mavros_rqt_graph.png used on input line 355.
  [19] [20 <./images/mavros_rqt_graph.png>]
 [21]
 Chapter 5.
-<images/in_field_picture.jpg, id=111, 2601.72pt x 1951.29pt>
+<images/in_field_picture.jpg, id=108, 2601.72pt x 1951.29pt>
 File: images/in_field_picture.jpg Graphic file (type jpg)
 
 <use images/in_field_picture.jpg>
@@ -661,7 +659,7 @@ Package pdftex.def Info: images/in_field_picture.jpg used on input line 373.
  [22
 
  <./images/in_field_picture.jpg>]
-<images/flight_plan_3.png, id=116, 816.04875pt x 755.82375pt>
+<images/flight_plan_3.png, id=112, 816.04875pt x 755.82375pt>
 File: images/flight_plan_3.png Graphic file (type png)
 
 <use images/flight_plan_3.png>
@@ -674,14 +672,14 @@ File: images/flight_plan_3.png Graphic file (type png)
 Package pdftex.def Info: images/flight_plan_3.png used on input line 452.
 (pdftex.def)             Requested size: 285.62134pt x 264.54227pt.
 
-<images/topographical_mod.png, id=126, 360.34625pt x 258.9675pt>
+<images/topographical_mod.png, id=123, 360.34625pt x 258.9675pt>
 File: images/topographical_mod.png Graphic file (type png)
 
 <use images/topographical_mod.png>
 Package pdftex.def Info: images/topographical_mod.png used on input line 459.
 (pdftex.def)             Requested size: 162.15431pt x 116.53429pt.
 
-<images/low_wind_raw.jpg, id=127, 1861.95625pt x 1004.75375pt>
+<images/low_wind_raw.jpg, id=124, 1861.95625pt x 1004.75375pt>
 File: images/low_wind_raw.jpg Graphic file (type jpg)
 
 <use images/low_wind_raw.jpg>
@@ -690,14 +688,14 @@ Package pdftex.def Info: images/low_wind_raw.jpg used on input line 468.
  [26
 
 ]
-<images/low_wind_interp2.jpg, id=131, 1861.95625pt x 1004.75375pt>
+<images/low_wind_interp2.jpg, id=128, 1861.95625pt x 1004.75375pt>
 File: images/low_wind_interp2.jpg Graphic file (type jpg)
 
 <use images/low_wind_interp2.jpg>
 Package pdftex.def Info: images/low_wind_interp2.jpg used on input line 476.
 (pdftex.def)             Requested size: 372.38466pt x 200.94719pt.
 
-<images/Windy_raw.jpg, id=132, 1861.95625pt x 1004.75375pt>
+<images/Windy_raw.jpg, id=129, 1861.95625pt x 1004.75375pt>
 File: images/Windy_raw.jpg Graphic file (type jpg)
 
 <use images/Windy_raw.jpg>
@@ -705,14 +703,14 @@ Package pdftex.def Info: images/Windy_raw.jpg used on input line 483.
 (pdftex.def)             Requested size: 372.38466pt x 200.94719pt.
  [27 <./images/topographical_mod.png> <./images/low_wind_raw.jpg>] [28 <./image
 s/low_wind_interp2.jpg> <./images/Windy_raw.jpg>]
-<images/windy_interp_moded.jpg, id=140, 1861.95625pt x 1004.75375pt>
+<images/windy_interp_moded.jpg, id=136, 1861.95625pt x 1004.75375pt>
 File: images/windy_interp_moded.jpg Graphic file (type jpg)
 
 <use images/windy_interp_moded.jpg>
 Package pdftex.def Info: images/windy_interp_moded.jpg used on input line 496.
 (pdftex.def)             Requested size: 372.38466pt x 200.94719pt.
 
-<images/windy_inter_reg_mid.jpg, id=141, 1861.95625pt x 1004.75375pt>
+<images/windy_inter_reg_mid.jpg, id=137, 1861.95625pt x 1004.75375pt>
 File: images/windy_inter_reg_mid.jpg Graphic file (type jpg)
 
 <use images/windy_inter_reg_mid.jpg>
@@ -720,20 +718,20 @@ Package pdftex.def Info: images/windy_inter_reg_mid.jpg used on input line 506.
 
 (pdftex.def)             Requested size: 372.38466pt x 200.94719pt.
  [29 <./images/windy_interp_moded.jpg> <./images/windy_inter_reg_mid.jpg>]
-<images/curious_weather.png, id=145, 643.40375pt x 501.875pt>
+<images/curious_weather.png, id=142, 643.40375pt x 501.875pt>
 File: images/curious_weather.png Graphic file (type png)
 
 <use images/curious_weather.png>
 Package pdftex.def Info: images/curious_weather.png used on input line 518.
 (pdftex.def)             Requested size: 405.34651pt x 316.1829pt.
 
-<images/last.png, id=146, 645.41125pt x 492.84125pt>
+<images/last.png, id=143, 645.41125pt x 492.84125pt>
 File: images/last.png Graphic file (type png)
  <use images/last.png>
 Package pdftex.def Info: images/last.png used on input line 524.
 (pdftex.def)             Requested size: 406.61125pt x 310.49162pt.
 
-<images/Pressure_from_AP.jpg, id=147, 1861.95625pt x 1004.75375pt>
+<images/Pressure_from_AP.jpg, id=144, 1861.95625pt x 1004.75375pt>
 File: images/Pressure_from_AP.jpg Graphic file (type jpg)
 
 <use images/Pressure_from_AP.jpg>
@@ -743,14 +741,14 @@ Package pdftex.def Info: images/Pressure_from_AP.jpg used on input line 531.
 
  <./images/curious_weather.png (PNG copy)>] [31 <./images/last.png> <./images/P
 ressure_from_AP.jpg>]
-<images/surface_mag.jpg, id=154, 1861.95625pt x 1004.75375pt>
+<images/surface_mag.jpg, id=151, 1861.95625pt x 1004.75375pt>
 File: images/surface_mag.jpg Graphic file (type jpg)
 
 <use images/surface_mag.jpg>
 Package pdftex.def Info: images/surface_mag.jpg used on input line 541.
 (pdftex.def)             Requested size: 372.38466pt x 200.94719pt.
 
-<images/clustered_cells.jpg, id=155, 1861.95625pt x 1004.75375pt>
+<images/clustered_cells.jpg, id=152, 1861.95625pt x 1004.75375pt>
 File: images/clustered_cells.jpg Graphic file (type jpg)
 
 <use images/clustered_cells.jpg>
@@ -762,13 +760,18 @@ Package pdftex.def Info: images/clustered_cells.jpg used on input line 546.
 Chapter 6.
 [34
 
-] <images/taleaus.jpg, id=166, 1183.42125pt x 997.7275pt>
+] <images/taleaus.jpg, id=162, 1183.42125pt x 997.7275pt>
 File: images/taleaus.jpg Graphic file (type jpg)
 
 <use images/taleaus.jpg>
 Package pdftex.def Info: images/taleaus.jpg used on input line 568.
 (pdftex.def)             Requested size: 236.68005pt x 199.54196pt.
- [35 <./images/taleaus.jpg>] [36] [37
+
+
+LaTeX Warning: Reference `fig:plane_swarm' on page 35 undefined on input line 5
+74.
+
+[35 <./images/taleaus.jpg>] [36] [37
 
 ]
 Underfull \hbox (badness 2626) in paragraph at lines 649--650
@@ -788,34 +791,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 682--683
 nt
  []
 
-[39] (./main.aux) ) 
+[39] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3201 strings out of 495028
- 44591 string characters out of 6181496
- 110738 words of memory out of 5000000
- 6310 multiletter control sequences out of 15000+600000
+ 3661 strings out of 494985
+ 50416 string characters out of 6180356
+ 207735 words of memory out of 5000000
+ 6766 multiletter control sequences out of 15000+600000
  16287 words of font info for 61 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 38i,9n,24p,1527b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-mextra/cmbsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmtt12.pfb>
-Output written on main.pdf (42 pages, 8174702 bytes).
+ 36 hyphenation exceptions out of 8191
+ 38i,9n,28p,1527b,288s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (41 pages, 8174405 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
+ 230 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
