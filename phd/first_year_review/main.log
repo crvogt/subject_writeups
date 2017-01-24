@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.12.1)  16 JAN 2017 18:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.12.1)  23 JAN 2017 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -392,6 +392,9 @@ LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 ) (./main.aux
 
+LaTeX Warning: Label `fig:camera_array' multiply defined.
+
+
 LaTeX Warning: Label `fig:parameterization_visual' multiply defined.
 
 
@@ -526,105 +529,139 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [2
 
 ]
+<images/seethrough_occluder.png, id=19, 352.31625pt x 265.99374pt>
+File: images/seethrough_occluder.png Graphic file (type png)
+
+<use images/seethrough_occluder.png>
+Package pdftex.def Info: images/seethrough_occluder.png used on input line 57.
+(pdftex.def)             Requested size: 193.77454pt x 146.297pt.
+
+Overfull \hbox (8.14493pt too wide) in paragraph at lines 57--58
+ [][] 
+ []
+
+<images/seethrough_occluder2.png, id=21, 352.31625pt x 265.99374pt>
+File: images/seethrough_occluder2.png Graphic file (type png)
+
+<use images/seethrough_occluder2.png>
+Package pdftex.def Info: images/seethrough_occluder2.png used on input line 63.
+
+(pdftex.def)             Requested size: 193.77454pt x 146.297pt.
+
+Overfull \hbox (8.14493pt too wide) in paragraph at lines 63--64
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]\OT1/cmr/m/n/12 Figure 2: An-other col-lec-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\OT1/cmr/m/n/12 method, the gantry ef-fec-tively
+ []
+
 [3
 
-] <images/plenoptic_image.png, id=22, 337.26pt x 237.13594pt>
+ <./images/seethrough_occluder.png> <./images/seethrough_occluder2.png>]
+[4] <images/plenoptic_image.png, id=30, 337.26pt x 237.13594pt>
 File: images/plenoptic_image.png Graphic file (type png)
 
 <use images/plenoptic_image.png>
-Package pdftex.def Info: images/plenoptic_image.png used on input line 64.
+Package pdftex.def Info: images/plenoptic_image.png used on input line 81.
 (pdftex.def)             Requested size: 252.94437pt x 177.8515pt.
- [4
+ [5
 
  <./images/plenoptic_image.png>]
-<images/Light-field-parameterizations.png, id=27, 513.117pt x 84.5559pt>
+<images/Light-field-parameterizations.png, id=36, 513.117pt x 84.5559pt>
 File: images/Light-field-parameterizations.png Graphic file (type png)
 
 <use images/Light-field-parameterizations.png>
 Package pdftex.def Info: images/Light-field-parameterizations.png used on input
- line 102.
+ line 119.
 (pdftex.def)             Requested size: 384.8368pt x 63.41675pt.
- [5] [6 <./images/Light-field-parameterizations.png>]
-<images/stanford_camera_array.png, id=37, 200.75pt x 150.5625pt>
+ [6] [7 <./images/Light-field-parameterizations.png>]
+<images/stanford_camera_array.png, id=45, 200.75pt x 150.5625pt>
 File: images/stanford_camera_array.png Graphic file (type png)
 
 <use images/stanford_camera_array.png>
-Package pdftex.def Info: images/stanford_camera_array.png used on input line 17
-0.
+Package pdftex.def Info: images/stanford_camera_array.png used on input line 18
+7.
 (pdftex.def)             Requested size: 180.67331pt x 135.50497pt.
 
-<images/lego_gantry.jpg, id=38, 213.79875pt x 342.27875pt>
+<images/lego_gantry.jpg, id=46, 213.79875pt x 342.27875pt>
 File: images/lego_gantry.jpg Graphic file (type jpg)
 
 <use images/lego_gantry.jpg>
-Package pdftex.def Info: images/lego_gantry.jpg used on input line 176.
+Package pdftex.def Info: images/lego_gantry.jpg used on input line 193.
 (pdftex.def)             Requested size: 106.89911pt x 171.13895pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
-[]\OT1/cmr/m/n/12 Figure 4: An-other col-lec-tion
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[]\OT1/cmr/m/n/12 Figure 6: An-other col-lec-tion
  []
 
-[7] [8 <./images/stanford_camera_array.png (PNG copy)> <./images/lego_gantry.jp
-g>] <images/lytro_immerge.jpg, id=45, 2509.375pt x 1492.57625pt>
+[8] [9 <./images/stanford_camera_array.png (PNG copy)> <./images/lego_gantry.jp
+g>] <images/lytro_immerge.jpg, id=53, 2509.375pt x 1492.57625pt>
 File: images/lytro_immerge.jpg Graphic file (type jpg)
 
 <use images/lytro_immerge.jpg>
-Package pdftex.def Info: images/lytro_immerge.jpg used on input line 203.
+Package pdftex.def Info: images/lytro_immerge.jpg used on input line 220.
 (pdftex.def)             Requested size: 200.7541pt x 119.40854pt.
 
-Overfull \hbox (15.1245pt too wide) in paragraph at lines 203--204
+Overfull \hbox (15.1245pt too wide) in paragraph at lines 220--221
  [][] 
  []
 
-<images/jump_vr_video_cameras.jpg, id=46, 1606.0pt x 903.375pt>
+<images/jump_vr_video_cameras.jpg, id=54, 1606.0pt x 903.375pt>
 File: images/jump_vr_video_cameras.jpg Graphic file (type jpg)
 
 <use images/jump_vr_video_cameras.jpg>
-Package pdftex.def Info: images/jump_vr_video_cameras.jpg used on input line 20
-9.
+Package pdftex.def Info: images/jump_vr_video_cameras.jpg used on input line 22
+6.
 (pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
 
-Overfull \hbox (7.08208pt too wide) in paragraph at lines 209--210
+Overfull \hbox (7.08208pt too wide) in paragraph at lines 226--227
  [][] 
  []
 
-[9 <./images/lytro_immerge.jpg> <./images/jump_vr_video_cameras.jpg>]
-<images/mosaic.jpg, id=50, 9124.0875pt x 2047.65pt>
+[10 <./images/lytro_immerge.jpg> <./images/jump_vr_video_cameras.jpg>]
+<images/mosaic.jpg, id=58, 9124.0875pt x 2047.65pt>
 File: images/mosaic.jpg Graphic file (type jpg)
  <use images/mosaic.jpg>
-Package pdftex.def Info: images/mosaic.jpg used on input line 233.
+Package pdftex.def Info: images/mosaic.jpg used on input line 250.
 (pdftex.def)             Requested size: 319.37569pt x 71.67506pt.
 
-<images/nau_lf.png, id=51, 667.49374pt x 566.115pt>
+<images/nau_lf.png, id=59, 667.49374pt x 566.115pt>
 File: images/nau_lf.png Graphic file (type png)
  <use images/nau_lf.png>
-Package pdftex.def Info: images/nau_lf.png used on input line 240.
+Package pdftex.def Info: images/nau_lf.png used on input line 257.
 (pdftex.def)             Requested size: 266.99277pt x 226.44199pt.
 
-[10
+[11
 
- <./images/mosaic.jpg>] [11 <./images/nau_lf.png>]
-Overfull \hbox (5.66464pt too wide) in paragraph at lines 259--259
+ <./images/mosaic.jpg>] [12 <./images/nau_lf.png>]
+Overfull \hbox (5.66464pt too wide) in paragraph at lines 276--276
 []\OT1/cmr/bx/n/17.28 Second Step: Cap-tur-ing Light Fields in Time 
  []
 
-[12
+[13
 
-] [13
+] [14
 
-] [14] (./main.aux)
+] [15] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3231 strings out of 494985
- 43466 string characters out of 6180356
- 199161 words of memory out of 5000000
- 6369 multiletter control sequences out of 15000+600000
+ 3243 strings out of 494985
+ 43831 string characters out of 6180356
+ 199176 words of memory out of 5000000
+ 6379 multiletter control sequences out of 15000+600000
  13656 words of font info for 52 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,9n,24p,901b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,9n,24p,901b,288s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
@@ -632,10 +669,10 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (16 pages, 5878634 bytes).
+Output written on main.pdf (17 pages, 6164772 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,8 +1,10 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces The plenoptic function sampled at two points, showing all pencils of light rays which pass through those points \cite {Adelson91}.}}{4}
-\contentsline {figure}{\numberline {2}{\ignorespaces The plenoptic function at two points, showing all pencils of light rays \cite {Adelson91}}}{6}
-\contentsline {figure}{\numberline {3}{\ignorespaces The dense camera array used at Stanford to capture a number of light fields.}}{8}
-\contentsline {figure}{\numberline {4}{\ignorespaces Another collection method, the gantry effectively mimics the camera array so long as the scene is not altered between gantry locations.}}{8}
-\contentsline {figure}{\numberline {5}{\ignorespaces the lytro immerge, designed to capture an entire scene at once, with an array of cameras built into the structure.}}{9}
-\contentsline {figure}{\numberline {6}{\ignorespaces On the right is the camera rig behind the Google Jump VR video system \cite {Anderson16}}}{9}
-\contentsline {figure}{\numberline {7}{\ignorespaces The plenoptic function at two points, showing all pencils of light rays \cite {Adelson91}}}{10}
-\contentsline {figure}{\numberline {8}{\ignorespaces The plenoptic function at two points, showing all pencils of light rays \cite {Adelson91}}}{11}
+\contentsline {figure}{\numberline {1}{\ignorespaces The dense camera array used at Stanford to capture a number of light fields.}}{3}
+\contentsline {figure}{\numberline {2}{\ignorespaces Another collection method, the gantry effectively mimics the camera array so long}}{3}
+\contentsline {figure}{\numberline {3}{\ignorespaces The plenoptic function sampled at two points, showing all pencils of light rays which pass through those points \cite {Adelson91}.}}{5}
+\contentsline {figure}{\numberline {4}{\ignorespaces The plenoptic function at two points, showing all pencils of light rays \cite {Adelson91}}}{7}
+\contentsline {figure}{\numberline {5}{\ignorespaces The dense camera array used at Stanford to capture a number of light fields.}}{9}
+\contentsline {figure}{\numberline {6}{\ignorespaces Another collection method, the gantry effectively mimics the camera array so long as the scene is not altered between gantry locations.}}{9}
+\contentsline {figure}{\numberline {7}{\ignorespaces the lytro immerge, designed to capture an entire scene at once, with an array of cameras built into the structure.}}{10}
+\contentsline {figure}{\numberline {8}{\ignorespaces On the right is the camera rig behind the Google Jump VR video system \cite {Anderson16}}}{10}
+\contentsline {figure}{\numberline {9}{\ignorespaces The plenoptic function at two points, showing all pencils of light rays \cite {Adelson91}}}{11}
+\contentsline {figure}{\numberline {10}{\ignorespaces The plenoptic function at two points, showing all pencils of light rays \cite {Adelson91}}}{12}

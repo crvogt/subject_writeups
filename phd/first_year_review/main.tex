@@ -49,7 +49,24 @@ immersion if they can be captured for a suitable volume"
 
 Current light field technology is built on the parameterization put forward by Levoy in 1996. If we go back just five years to the original paper regarding the plenoptic function, we see a critical element missing from the the function: time. There are a number of major limitations associated with light fields. For one, the method for data collection is often bulky or slow and extremely limited in its capabilities (cite the papers). Up until recently, it has required a static scene, but advances in light field cameras and processing power have seen small advancements in light field video (cite). Regardless, this still leaves the user with the first problem. Another issue is the lack of mobility within a scene and capture. With current rendering techniques, the parameterization is adhered to exactly. That is to say, if image capture is done two dimensionally, it must remain so. 
 
-We aim to not only improve on the work of (unstructured light fields), but to develop a system that can take time into account for a dynamic light field experience. 
+Light fields have a number of intriguiing qualities that have yet to be exploited. Such abilites include the ability to recreate a background image in the presence of an occluder as scene in figure \ref{fig:seethrough_occluder}. 
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[scale=0.55]{seethrough_occluder.png}
+		\caption{The dense camera array used at Stanford to capture a number of light fields.}
+		\label{fig:camera_array}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[scale=0.55]{seethrough_occluder2.png}
+		\caption{Another collection method, the gantry effectively mimics the camera array so long}
+		\label{fig:seethrough_occluder}
+	\end{minipage}
+\end{figure}
+
+We aim to not only improve on the work done to date, but to develop a system that can take time into account for a dynamic light field experience. 
 
 Light fields are a rising method for rendering scenes. With the rising popularity of virtual reality, light field technology has the potential to revolutionize the way in which viewers interact with subjects of interest, like sports matches.
 
@@ -317,6 +334,9 @@ The ability to allow a user to move through space and time could have huge impli
 
 \bibitem{Levoy06b}
 	(2006). \emph{Light Field Microscopy}
+	
+\bibitem{Mahajan09}
+	(2009). \emph{Moving Gradients: A Path-Based Method for Plausible Image Interpolation}	
 	
 \bibitem{McMillan95}
 	(1995). \emph{Plenoptic Modelling: An Image-Based Rendering System}
