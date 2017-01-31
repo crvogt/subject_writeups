@@ -1,10 +1,16 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces The dense camera array used at Stanford to capture a number of light fields.}}{3}
-\contentsline {figure}{\numberline {2}{\ignorespaces Another collection method, the gantry effectively mimics the camera array so long}}{3}
+\contentsline {figure}{\numberline {1}{\ignorespaces The dense camera array used at Stanford to capture a number of light fields.}}{4}
+\contentsline {figure}{\numberline {2}{\ignorespaces Another collection method, the gantry effectively mimics the camera array so long}}{4}
 \contentsline {figure}{\numberline {3}{\ignorespaces The plenoptic function sampled at two points, showing all pencils of light rays which pass through those points \cite {Adelson91}.}}{5}
 \contentsline {figure}{\numberline {4}{\ignorespaces The plenoptic function at two points, showing all pencils of light rays \cite {Adelson91}}}{7}
 \contentsline {figure}{\numberline {5}{\ignorespaces The dense camera array used at Stanford to capture a number of light fields.}}{9}
 \contentsline {figure}{\numberline {6}{\ignorespaces Another collection method, the gantry effectively mimics the camera array so long as the scene is not altered between gantry locations.}}{9}
 \contentsline {figure}{\numberline {7}{\ignorespaces the lytro immerge, designed to capture an entire scene at once, with an array of cameras built into the structure.}}{10}
 \contentsline {figure}{\numberline {8}{\ignorespaces On the right is the camera rig behind the Google Jump VR video system \cite {Anderson16}}}{10}
-\contentsline {figure}{\numberline {9}{\ignorespaces The plenoptic function at two points, showing all pencils of light rays \cite {Adelson91}}}{11}
-\contentsline {figure}{\numberline {10}{\ignorespaces The plenoptic function at two points, showing all pencils of light rays \cite {Adelson91}}}{12}
+\contentsline {figure}{\numberline {9}{\ignorespaces This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}}{12}
+\contentsline {figure}{\numberline {10}{\ignorespaces This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}}{13}
+\contentsline {figure}{\numberline {11}{\ignorespaces This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}}{14}
+\contentsline {figure}{\numberline {12}{\ignorespaces This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}}{14}
+\contentsline {figure}{\numberline {13}{\ignorespaces A depiction of the second renderer based on \cite {Isaksen01} and showing the plane of focus $F$ and the rays coming from it that would be considered in focus.}}{15}
+\contentsline {figure}{\numberline {14}{\ignorespaces A screenshot of the light field interface in action, with the subaperture views shown in blue, the aperture shown as the red circle, and the resulting image shown in the larger window.}}{15}
+\contentsline {figure}{\numberline {15}{\ignorespaces The dense camera array used at Stanford to capture a number of light fields.}}{16}
+\contentsline {figure}{\numberline {16}{\ignorespaces Another collection method, the gantry effectively mimics the camera array so long}}{16}

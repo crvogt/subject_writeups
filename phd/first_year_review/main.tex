@@ -30,7 +30,7 @@
 
 \begin{abstract}
 \begin{small}
-abstract
+In this review, the light field research area is discussed as well as potential future directions. The content includes an introduction to the topic and its brief history, a literature review on it and other relevant areas to the problem, work that has been done to date outside of the literature review, and proposed research including future steps.
 \end{small}
 \end{abstract}
 
@@ -39,13 +39,11 @@ abstract
 \tableofcontents
 
 \chapter*{Introduction}
-What is your hypothesis
+Light field rendering is a fascinating image-based rendering (IBR) technique whose properties have only begun to be explored. With the seminal paper on the topic published in 1996 \cite{Levoy96}, research and applications have been rather limited, with a majority of research being directed towards virtual reality (VR) in the entertainment industry. There are a number of reasons for the limited research directions and abundance which will be covered here as well as the positive aspects and advantages of light field IBR.
 
-"There are many potential formats which could be used for VR video.
-Lightfields [Levoy and Hanrahan 1996] provide the greatest level of
-immersion if they can be captured for a suitable volume"
+The primary technique from which light field representations are derived is image-based rendering. It is described by McMillan and *** as the method of creating a "continuous representation" of the scene or subject being discretely sampled \cite{McMillan95}. 
 
-"...a practical solution for this has not yet been demonstrated"
+The sampling that makes up IBR comes from the plenoptic function, a seven-dimensional function that describes the sum of light rays at any point in space.
 
 Current light field technology is built on the parameterization put forward by Levoy in 1996. If we go back just five years to the original paper regarding the plenoptic function, we see a critical element missing from the the function: time. There are a number of major limitations associated with light fields. For one, the method for data collection is often bulky or slow and extremely limited in its capabilities (cite the papers). Up until recently, it has required a static scene, but advances in light field cameras and processing power have seen small advancements in light field video (cite). Regardless, this still leaves the user with the first problem. Another issue is the lack of mobility within a scene and capture. With current rendering techniques, the parameterization is adhered to exactly. That is to say, if image capture is done two dimensionally, it must remain so. 
 
@@ -56,13 +54,13 @@ Light fields have a number of intriguiing qualities that have yet to be exploite
 		\centering
 		\includegraphics[scale=0.55]{seethrough_occluder.png}
 		\caption{The dense camera array used at Stanford to capture a number of light fields.}
-		\label{fig:camera_array}
+		\label{fig:seethrough_occluder}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 		\centering
 		\includegraphics[scale=0.55]{seethrough_occluder2.png}
 		\caption{Another collection method, the gantry effectively mimics the camera array so long}
-		\label{fig:seethrough_occluder}
+		\label{fig:seethrough_occluder2}
 	\end{minipage}
 \end{figure}
 
@@ -72,7 +70,11 @@ Light fields are a rising method for rendering scenes. With the rising popularit
 
 WE want to create a system that can capture a light field and effectively turn it back into a 5D problem, where time is one of the specified parameters
 
-Given a set of discrete samples (complete or incomplete), from the plenoptic function, the goal of image-based rendering is to generate a continuous representation of that function\cite{McMillan95}
+"There are many potential formats which could be used for VR video.
+Lightfields [Levoy and Hanrahan 1996] provide the greatest level of
+immersion if they can be captured for a suitable volume"
+
+"...a practical solution for this has not yet been demonstrated"
 
 \chapter*{Literature Review}
 The light field is, at its base, a derivation of the plenoptic function (the root \emph{plenus} meaning complete, and optic). The plenoptic function, the concept for which was set forward by Adelson and Bergen in 1991, is a method of mathematically describing the elements of vision. The paper takes on the daunting task of defining what can be seen across 3D space, where every point (or pencil of rays) contains the information for all of the rays passing through it.  This is illustrated well in figure  \ref{fig:plenoptic_visual}. 
@@ -237,26 +239,90 @@ In another paper, the authors*** were interested in aircraft placement for optim
 
 The final paper with In another, a system was developed to define the trajectory of a multirotor... \cite{Roberts16}
 
+\section*{Advent of the Light Field Camera}
+This section goes through, in detail, a paper of particular interest written by Ng et al entitled \emph{Light Field Photography with a Hand-held Plenoptic Camera}. In it, the authors outline a method for collecting light fields with a single, modified camera rather than with the bulky and difficult camera array which is also faster than the single camera method employed in papers such as \cite{Davis12}.
+
 
 
 \chapter*{Progress to Date}
 A considerable amount of work has been done so far in terms of learning, constructing light field viewers, and scratching at the limit of current state of the art techniques and technologies. This sections covers some of the hurdles in deducing what platforms to use, such as quantifying the accuracy of the systems involved, as well as collection, and finally on to intial rendering of acquired light fields.
+
 \section*{Comparison of Platforms}
-\section*{SLAM}
-In the literature review section of this report, of interest is SLAM techniques. This will likely be key in determining the method by which 
+The method for collecting light fields is highly variable and a number of those methods have been explored through experimentation, which is detailed here. In an attempt to acquire light fields with precise position values, a comparison was done between what was at the most available and standard SLAM software, and the baxter robot by Rethink Robotics. This does not account for all of the methods that can or will be used to acquire light fields.
+
+The first method tested was the baxter 7 DOF arm, using the built in camera. A laser was grasped by the robot and directed at a black frame of known dimensions on a white background. The arm was programmed to move in a grid pattern, stopping periodically so that the camera below the laser could take a picture of the scene. The pictures were then analyzed for accuracy against predetermined points that the laser should have aligned with. The results of these tests can be seen in figures \ref{fig:bax_ptam_variance} and \ref{fig:bax_ptam_std_dev}.
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[scale=0.035]{mosaic.jpg}
-	\caption{The plenoptic function at two points, showing all pencils of light rays \cite{Adelson91}}
-	\label{fig:parameterization_visual}
+	\includegraphics[scale=0.55]{bax_and_ptam_var.png}
+	\caption{This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}
+	\label{fig:bax_ptam_variance}
 \end{figure}
 
 \begin{figure}[!ht]
 	\centering
+	\includegraphics[scale=0.55]{bax_and_ptam_std_dev.png}
+	\caption{This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}
+	\label{fig:bax_ptam_std_dev}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.55]{experiment_image.png}
+	\caption{This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}
+	\label{fig:bax_ptam_std_dev}
+\end{figure}
+
+\section*{SLAM}
+In the literature review section of this report, of interest is SLAM techniques. This will likely be key in determining the method by which 
+
+\section*{Collected Light Fields}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.045]{mosaic.jpg}
+	\caption{This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}
+	\label{fig:nau_collected_images}
+\end{figure}
+
+\section*{System Built}
+The following section describes light field renderers that have been successfully constructed to date. Three different systems have been built and iterated upon, and utilize three distinct methods for storing rays and querying a database for the appropriate ray parameters. The first system built takes its form from the seminal paper by Levoy and *** \cite{Levoy96}, the second is based on the work by Isaksen *** \cite{Isaksen01}, and the third is a combination of the work by LEvoy *** and the renderer created by the New Stanford Light Field Archive \cite{lfArchive} **cite Stanford archive.
+
+also assumes that the pixel is a sum of the rays at that point
+The first renderer utilizes the common, and original two-plane parameterization set forward in \cite{Levoy96}. As with all parameterizations, a pinhole model is assumed for the camera being used. A number of known values are required for this particular parameterization to work, such as distance of the subject from the camera. With this knowledge, the $ST$ and $UV$ planes may be appropriately placed such that light rays from the subject pass through both before entering the camera. Aside from the distance to the subject, the internal physical camera parameters must be known, such as the size of the image sensor, the camera flange focal length, the position of the camera in a global reference frame, and the number of pixels on the image sensor. Knowing these parameters allows for the storage of two points which are defined by the two planes $P=(S,T), Q=(U,V)$, and together give the direction of the ray along with its recorded intensity value. The new ray database can then be queried at any time for a new camera position. With the new position, a k-Nearest Neighbors (KNN) algorithm is used to compare ray directions with stored directions and an average is taken of intensity values for the nearest rays to create a new image.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.7]{mobile_focus.png}
+	\caption{A depiction of the second renderer based on \cite{Isaksen01} and showing the plane of focus $F$ and the rays coming from it that would be considered in focus.}
+	\label{fig:mobile_focus}
+\end{figure}
+
+The second renderer built is based on \cite{Isaksen01}. It is similar to the previous method but moves the planes to the internals of the camera where there are still no occlusions. Regardless of the plane locations, rays from the scene are still calculated and stored the same way, but there is the addition of a mobile "focus plane". This focus plane allows for focus at different points in the scene via finding the rays coming from the object at the plane position as illustrated in figure \ref{fig:mobile_focus}.
+ 
+A third renderer was built based on the online viewer found on the New Stanford Light Field Archive website \cite{lfArchive}. After downloading the ActionScript/MXMLsource code and reverse engineering tt, it was rewritten in C++ and OpenCV. It is pictured in figure \ref{fig:light_field_system}. It is a much simplified version of the first renderer that was programmed, but is considerably faster in its run time. In this case, the images are required to be taken specifically from a single plane as any deviation would lead to ghosting. This is caused by the fact that the current rendering technique that this is based on 
+\begin{figure}[!ht]
+	\centering
 	\includegraphics[scale=0.4]{nau_lf.png}
-	\caption{The plenoptic function at two points, showing all pencils of light rays \cite{Adelson91}}
-	\label{fig:parameterization_visual}
+	\caption{A screenshot of the light field interface in action, with the subaperture views shown in blue, the aperture shown as the red circle, and the resulting image shown in the larger window.}
+	\label{fig:light_field_system}
+\end{figure}
+
+\ref{fig:seethrough_nau}. 
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[scale=0.35]{nau_occluding.png}
+		\caption{The dense camera array used at Stanford to capture a number of light fields.}
+		\label{fig:nau_occluding}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[scale=0.35]{seethrough_nau.png}
+		\caption{Another collection method, the gantry effectively mimics the camera array so long}
+		\label{fig:seethrough_nau}
+	\end{minipage}
 \end{figure}
 
 \chapter*{Proposed Research}
@@ -270,10 +336,10 @@ Show ardrone image
 While there are existing drones that can easily be controlled from the computer and capture data, there is clear lag high risk of data loss due to the transmission method (wifi). Instead, I would propose to make some simple modifications that would allow data capture and control in real time.
 Drone Image + hardware
 
-\section{First Step: Unstructured Light Fields with Robots}
+\section*{First Step: Unstructured Light Fields with Robots}
 First to replicate the experiment done with Davis, then with PR2 and Baxter, then on to drones.
 
-\section{Second Step: Capturing Light Fields in Time}
+\section*{Second Step: Capturing Light Fields in Time}
 The ability to allow a user to move through space and time could have huge implications in the realm of science and industry, allowing scietists to monitor experiments more closely than ever, and industry to monitor apparatus more in depth and with greater detail than before.
 
 \begin{thebibliography}{10}%Any two digit number for more than nine references
@@ -368,7 +434,8 @@ The ability to allow a user to move through space and time could have huge impli
 \bibitem{Wilburn05}
 	(2005). \emph{High-Speed Videography Using a Dense Camera Array}
 
-stanford new light field archive http://lightfield.stanford.edu/
+\bibitem{lfArchive}
+	stanford new light field archive http://lightfield.stanford.edu/
 
 \end{thebibliography}
 
