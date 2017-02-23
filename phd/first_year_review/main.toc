@@ -2,8 +2,7 @@
 \contentsline {chapter}{\numberline {2}Literature Review}{7}
 \contentsline {section}{\numberline {2.1}Early Research and Derivation from Plenoptic Function}{8}
 \contentsline {section}{\numberline {2.2}Light Field Collection}{9}
-\contentsline {subsection}{\numberline {2.2.1}Images Required}{10}
-\contentsline {section}{\numberline {2.3}View Creation}{11}
+\contentsline {section}{\numberline {2.3}Image Interpolation}{10}
 \contentsline {section}{\numberline {2.4}Application of Light Fields}{11}
 \contentsline {section}{\numberline {2.5}Future Collection Methods}{12}
 \contentsline {section}{\numberline {2.6}Light Field Photography}{13}
@@ -14,6 +13,6 @@
 \contentsline {section}{\numberline {3.4}System Built}{22}
 \contentsline {chapter}{\numberline {4}Proposed Research}{25}
 \contentsline {section}{\numberline {4.1}First Step: Automated Unstructured Light Fields}{25}
-\contentsline {section}{\numberline {4.2}Second Step: Completing Light Fields}{27}
+\contentsline {section}{\numberline {4.2}Second Step: Completing Light Fields}{26}
 \contentsline {section}{\numberline {4.3}Next Steps}{27}
-\contentsline {chapter}{\numberline {5}Conclusion}{29}
+\contentsline {chapter}{\numberline {5}Conclusion}{28}
