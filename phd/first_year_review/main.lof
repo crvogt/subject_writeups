@@ -12,18 +12,17 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces the lytro immerge, designed to capture an entire scene at once, with an array of cameras built into the structure.}}{14}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces On the right is the camera rig behind the Google Jump VR video system \cite {Anderson16}}}{14}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces This image depicts the most common parameterizations at the time ***cite was written. Of the three, the two plane parameterization on the far right persists as the most popular.}}{15}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces This image depicts the most common parameterizations at the time ***cite was written. Of the three, the two plane parameterization on the far right persists as the most popular.}}{15}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces This image depicts the most common parameterizations at the time ***cite was written. Of the three, the two plane parameterization on the far right persists as the most popular.}}{16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}}{18}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}}{19}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}}{20}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}}{21}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces A depiction of the second renderer based on \cite {Isaksen01} and showing the plane of focus $F$ and the rays coming from it that would be considered in focus.}}{21}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces A depiction of the second renderer based on \cite {Isaksen01} and showing the plane of focus $F$ and the rays coming from it that would be considered in focus.}}{22}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces A screenshot of the light field interface in action, with the subaperture views shown in blue, the aperture shown as the red circle, and the resulting image shown in the larger window.}}{23}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces The dense camera array used at Stanford to capture a number of light fields.}}{23}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Another collection method, the gantry effectively mimics the camera array so long}}{23}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}}{19}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}}{20}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}}{21}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces This mosaic is a compilation of all the images taken during one light field acquisition session with the baxter robot.}}{22}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces A depiction of the second renderer based on \cite {Isaksen01} and showing the plane of focus $F$ and the rays coming from it that would be considered in focus.}}{22}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces A depiction of the second renderer based on \cite {Isaksen01} and showing the plane of focus $F$ and the rays coming from it that would be considered in focus.}}{23}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces A screenshot of the light field interface in action, with the subaperture views shown in blue, the aperture shown as the red circle, and the resulting image shown in the larger window.}}{24}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces The dense camera array used at Stanford to capture a number of light fields.}}{24}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Another collection method, the gantry effectively mimics the camera array so long}}{24}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces A screenshot of the light field interface in action, with the subaperture views shown in blue, the aperture shown as the red circle, and the resulting image shown in the larger window.}}{26}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces A screenshot of the light field interface in action, with the subaperture views shown in blue, the aperture shown as the red circle, and the resulting image shown in the larger window.}}{27}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A screenshot of the light field interface in action, with the subaperture views shown in blue, the aperture shown as the red circle, and the resulting image shown in the larger window.}}{27}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A screenshot of the light field interface in action, with the subaperture views shown in blue, the aperture shown as the red circle, and the resulting image shown in the larger window.}}{28}

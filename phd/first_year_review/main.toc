@@ -4,15 +4,14 @@
 \contentsline {section}{\numberline {2.2}Light Field Collection}{9}
 \contentsline {section}{\numberline {2.3}Image Interpolation}{10}
 \contentsline {section}{\numberline {2.4}Application of Light Fields}{11}
-\contentsline {section}{\numberline {2.5}Future Collection Methods}{12}
-\contentsline {section}{\numberline {2.6}Light Field Photography}{13}
-\contentsline {chapter}{\numberline {3}Progress to Date}{17}
-\contentsline {section}{\numberline {3.1}Comparison of Platforms}{17}
-\contentsline {section}{\numberline {3.2}SLAM}{19}
-\contentsline {section}{\numberline {3.3}Collected Light Fields}{20}
-\contentsline {section}{\numberline {3.4}System Built}{22}
-\contentsline {chapter}{\numberline {4}Proposed Research}{25}
-\contentsline {section}{\numberline {4.1}First Step: Automated Unstructured Light Fields}{25}
-\contentsline {section}{\numberline {4.2}Second Step: Completing Light Fields}{26}
-\contentsline {section}{\numberline {4.3}Next Steps}{27}
-\contentsline {chapter}{\numberline {5}Conclusion}{28}
+\contentsline {section}{\numberline {2.5}Future Collection Methods}{13}
+\contentsline {section}{\numberline {2.6}Light Field Photography}{14}
+\contentsline {chapter}{\numberline {3}Progress to Date}{18}
+\contentsline {section}{\numberline {3.1}Comparison of Platforms}{18}
+\contentsline {section}{\numberline {3.2}SLAM}{20}
+\contentsline {section}{\numberline {3.3}Collected Light Fields}{21}
+\contentsline {section}{\numberline {3.4}System Built}{23}
+\contentsline {chapter}{\numberline {4}Proposed Research}{26}
+\contentsline {section}{\numberline {4.1}First Step: Automated Unstructured Light Fields}{26}
+\contentsline {section}{\numberline {4.2}Second Step: Completing Light Fields}{28}
+\contentsline {section}{\numberline {4.3}Next Steps}{29}
