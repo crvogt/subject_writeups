@@ -1,0 +1,40 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[tmargin=2cm, lmargin=4cm, rmargin=2.5cm, bmargin=4cm, paperwidth=8.267in, paperheight=11.692in]{geometry}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{indentfirst}
+\graphicspath{ {images/} }
+\usepackage{lipsum}
+\usepackage{verbatim}
+\usepackage{titlepic}
+\usepackage{amsmath}
+%\usepackage{titlesec}
+
+\begin{document}
+
+\title{Swarm-Collected Light Field for 3D Object Recreation  \vspace{2.5cm}}	%\includegraphics[scale=0.2]{university_edinburgh.jpg}
+
+\date{
+	\centering
+	20 January 2017
+}
+
+\maketitle
+\section*{Project Aim}
+Utilize multiple drones to quickly and autonomously collect images of an area or object of interest via adaptively sampling and pre-built image pipeline. The resulting data should be processed to allow for occlusion removal, novel perspective creation, and 3D reconstruction.
+ 
+\section*{Function}
+This project would allow for new ways to visualize areas of interest. From a tactical perspective, the light field for an area may be collected, allowing for an immersive analysis of said area. A drone swarm is well equipped to gather this data quickly and efficiently, with the potential to adapt to changes in number or environment. 
+
+\section*{Criterion}
+\begin{itemize}
+\item Drones are equipped with cameras and capable of collecting images.
+\item Localization method such as ORB-SLAM2 used to determine drone's location relative to area of interest.
+\item The area is adaptively sampled.
+\item Resulting data is piped through pre-built light field image interpolation and rendering pipeline. 
+\item User is able to control view, focus, and occlusion factors.
+\end{itemize}
+
+\end{document}
