@@ -1,0 +1,23 @@
+\contentsline {chapter}{\numberline {1}Introduction}{4}
+\contentsline {section}{\numberline {1.1}Introduction}{4}
+\contentsline {section}{\numberline {1.2}Related Work}{7}
+\contentsline {chapter}{\numberline {2}Platform}{10}
+\contentsline {section}{\numberline {2.1}Airframe}{10}
+\contentsline {section}{\numberline {2.2}Autopilot}{11}
+\contentsline {section}{\numberline {2.3}Sensors}{12}
+\contentsline {chapter}{\numberline {3}Algorithms}{13}
+\contentsline {subsection}{\numberline {3.0.1}Kernel Selection}{15}
+\contentsline {subsection}{\numberline {3.0.2}Cross Validation}{15}
+\contentsline {section}{\numberline {3.1}Feature Recognition}{16}
+\contentsline {chapter}{\numberline {4}Implementation Tools}{18}
+\contentsline {section}{\numberline {4.1}Message Passing}{19}
+\contentsline {section}{\numberline {4.2}Node Implementation}{19}
+\contentsline {section}{\numberline {4.3}Data Visualization}{20}
+\contentsline {chapter}{\numberline {5}Results}{22}
+\contentsline {section}{\numberline {5.1}Data Collection}{22}
+\contentsline {section}{\numberline {5.2}Vector Field Interpolation and Regression}{26}
+\contentsline {section}{\numberline {5.3}Weather}{30}
+\contentsline {section}{\numberline {5.4}Feature Recognition}{32}
+\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{34}
+\contentsline {section}{\numberline {6.1}Conclusion}{34}
+\contentsline {section}{\numberline {6.2}Future Work}{35}

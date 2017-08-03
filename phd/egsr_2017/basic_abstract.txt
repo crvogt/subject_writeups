@@ -1,0 +1,3 @@
+summarises the problem and why it is important/interesting.
+
+Light fields are a data rich and immersive method for viewing scenes and subjects. Typically, collecting light fields is either a laborious task left to a human holding a camera, or a fast though limiting method by a bank of cameras or gantry. Robots offer an alternative, allowing for the capture of complex or difficult-to-reach scenes. In this paper, we introduce an error analysis of light field collection by robot using different SLAM techniques, and the robots' on board position estimation. We compare the resulting images with the ground truth to qualitatively determine the best of these mobile methods.
