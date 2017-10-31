@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.12.1)  24 FEB 2017 12:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.8.28)  31 OCT 2017 08:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -507,9 +507,29 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.lof [1
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.lof
 
-])
+LaTeX Warning: Citation `Levoy96' on page 1 undefined on input line 2.
+
+
+LaTeX Warning: Citation `Adelson91' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Citation `Anderson16' on page 1 undefined on input line 11.
+
+
+LaTeX Warning: Citation `Anderson16' on page 1 undefined on input line 13.
+
+
+LaTeX Warning: Citation `Isaksen01' on page 1 undefined on input line 21.
+
+[1
+
+]
+
+LaTeX Warning: Citation `Isaksen01' on page 2 undefined on input line 22.
+
+)
 \tf@lof=\write3
 \openout3 = `main.lof'.
 
@@ -521,15 +541,56 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 Chapter 1.
+
+LaTeX Warning: Citation `Levoy96' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `Gortler96' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `Anderson16' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `Davis12' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `Kalantari16' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `Levoy06b' on page 4 undefined on input line 37.
+
 <images/levoy_lf.jpg, id=19, 195.73125pt x 182.6825pt>
 File: images/levoy_lf.jpg Graphic file (type jpg)
 
 <use images/levoy_lf.jpg>
 Package pdftex.def Info: images/levoy_lf.jpg used on input line 42.
 (pdftex.def)             Requested size: 195.73076pt x 182.68204pt.
- [4
+
+
+LaTeX Warning: Citation `Levoy96' on page 4 undefined on input line 43.
+
+
+LaTeX Warning: Citation `McMillan95' on page 4 undefined on input line 46.
+
+
+LaTeX Warning: Citation `Adelson91' on page 4 undefined on input line 46.
+
+
+LaTeX Warning: Citation `Adelson91' on page 4 undefined on input line 46.
+
+[4
 
  <./images/levoy_lf.jpg>]
+
+LaTeX Warning: Reference `fig:levoy_lf' on page 5 undefined on input line 48.
+
+
+LaTeX Warning: Reference `fig:seethrough_occluder' on page 5 undefined on input
+ line 50.
+
+
+LaTeX Warning: Citation `Vaish06' on page 5 undefined on input line 50.
+
 <images/seethrough_occluder.png, id=23, 352.31625pt x 265.99374pt>
 File: images/seethrough_occluder.png Graphic file (type png)
 
@@ -553,9 +614,25 @@ Overfull \hbox (8.14493pt too wide) in paragraph at lines 61--62
  [][] 
  []
 
+
+LaTeX Warning: Citation `lfArchive' on page 5 undefined on input line 67.
+
+
+LaTeX Warning: Citation `Levoy06a' on page 5 undefined on input line 67.
+
 [5 <./images/seethrough_occluder.png> <./images/seethrough_occluder2.png>]
+
+LaTeX Warning: Citation `Anderson16' on page 6 undefined on input line 69.
+
+
+LaTeX Warning: Citation `lytro' on page 6 undefined on input line 69.
+
 [6]
 Chapter 2.
+
+LaTeX Warning: Reference `fig:plenoptic_visual' on page 7 undefined on input li
+ne 74.
+
 <images/plenoptic_image.png, id=36, 337.26pt x 237.13594pt>
 File: images/plenoptic_image.png Graphic file (type png)
 
@@ -563,21 +640,153 @@ File: images/plenoptic_image.png Graphic file (type png)
 Package pdftex.def Info: images/plenoptic_image.png used on input line 77.
 (pdftex.def)             Requested size: 252.94437pt x 177.8515pt.
 
+
+LaTeX Warning: Citation `Adelson91' on page 7 undefined on input line 78.
+
+
+LaTeX Warning: Citation `Adelson91' on page 7 undefined on input line 78.
+
+
+LaTeX Warning: Citation `Adelson91' on page 7 undefined on input line 81.
+
+
 Overfull \hbox (0.79477pt too wide) in paragraph at lines 83--83
 []\OT1/cmr/bx/n/17.28 Early Re-search and Deriva-tion from Plenop-
  []
 
 [7
 
- <./images/plenoptic_image.png>] [8]
-<images/Light-field-parameterizations.png, id=44, 513.117pt x 84.5559pt>
+ <./images/plenoptic_image.png>]
+
+LaTeX Warning: Citation `Adelson91' on page 8 undefined on input line 89.
+
+
+LaTeX Warning: Citation `McMillan95' on page 8 undefined on input line 91.
+
+
+LaTeX Warning: Citation `Huang14' on page 8 undefined on input line 91.
+
+
+LaTeX Warning: Citation `Levoy06a' on page 8 undefined on input line 95.
+
+
+LaTeX Warning: Citation `Levoy96' on page 8 undefined on input line 97.
+
+
+LaTeX Warning: Citation `Isaksen01' on page 8 undefined on input line 101.
+
+
+LaTeX Warning: Citation `Vaish06' on page 8 undefined on input line 101.
+
+
+LaTeX Warning: Citation `Oberlin16' on page 8 undefined on input line 101.
+
+
+LaTeX Warning: Citation `Kim13' on page 8 undefined on input line 101.
+
+
+LaTeX Warning: Citation `Levoy96' on page 8 undefined on input line 101.
+
+
+LaTeX Warning: Citation `Levoy96' on page 8 undefined on input line 103.
+
+
+LaTeX Warning: Citation `McMillan95' on page 8 undefined on input line 103.
+
+
+LaTeX Warning: Reference `fig:parameterization_visual' on page 8 undefined on i
+nput line 103.
+
+
+LaTeX Warning: Citation `Camahort09' on page 8 undefined on input line 105.
+
+
+LaTeX Warning: Reference `fig:mobile_focus' on page 8 undefined on input line 1
+05.
+
+
+LaTeX Warning: Citation `Isaksen01' on page 8 undefined on input line 105.
+
+[8] <images/Light-field-parameterizations.png, id=44, 513.117pt x 84.5559pt>
 File: images/Light-field-parameterizations.png Graphic file (type png)
 
 <use images/Light-field-parameterizations.png>
 Package pdftex.def Info: images/Light-field-parameterizations.png used on input
  line 109.
 (pdftex.def)             Requested size: 384.8368pt x 63.41675pt.
- [9 <./images/Light-field-parameterizations.png>] [10]
+
+
+LaTeX Warning: Citation `lfArchive' on page 9 undefined on input line 115.
+
+
+LaTeX Warning: Citation `lytro' on page 9 undefined on input line 115.
+
+
+LaTeX Warning: Reference `fig:camera_array' on page 9 undefined on input line 1
+15.
+
+
+LaTeX Warning: Citation `Ihrke16' on page 9 undefined on input line 115.
+
+
+LaTeX Warning: Citation `Koller04' on page 9 undefined on input line 117.
+
+
+LaTeX Warning: Citation `Wilburn05' on page 9 undefined on input line 117.
+
+[9 <./images/Light-field-parameterizations.png>]
+
+LaTeX Warning: Citation `Ng06' on page 10 undefined on input line 119.
+
+
+LaTeX Warning: Citation `Ng05' on page 10 undefined on input line 119.
+
+
+LaTeX Warning: Citation `Perwass12' on page 10 undefined on input line 119.
+
+
+LaTeX Warning: Citation `Georgeiv06' on page 10 undefined on input line 119.
+
+
+LaTeX Warning: Citation `Davis12' on page 10 undefined on input line 121.
+
+
+LaTeX Warning: Citation `Klein07' on page 10 undefined on input line 121.
+
+
+LaTeX Warning: Citation `Ng06' on page 10 undefined on input line 127.
+
+
+LaTeX Warning: Citation `Davis12' on page 10 undefined on input line 128.
+
+
+LaTeX Warning: Citation `Oberlin16' on page 10 undefined on input line 129.
+
+
+LaTeX Warning: Citation `Anderson16' on page 10 undefined on input line 132.
+
+
+LaTeX Warning: Citation `Davis12' on page 10 undefined on input line 132.
+
+
+LaTeX Warning: Citation `Davis12' on page 10 undefined on input line 132.
+
+
+LaTeX Warning: Citation `Chai00' on page 10 undefined on input line 137.
+
+[10]
+
+LaTeX Warning: Citation `Gortler96' on page 11 undefined on input line 142.
+
+
+LaTeX Warning: Citation `Kim13' on page 11 undefined on input line 142.
+
+
+LaTeX Warning: Citation `Shi14' on page 11 undefined on input line 144.
+
+
+LaTeX Warning: Citation `Kalantari16' on page 11 undefined on input line 146.
+
 <images/stanford_camera_array.png, id=51, 200.75pt x 150.5625pt>
 File: images/stanford_camera_array.png Graphic file (type png)
 
@@ -597,8 +806,43 @@ Underfull \hbox (badness 6047) in paragraph at lines 162--162
 []\OT1/cmr/m/n/12 Figure 2.4: An-other col-lec-tion
  []
 
-[11] [12 <./images/stanford_camera_array.png (PNG copy)> <./images/lego_gantry.
-jpg>] <images/lytro_immerge.jpg, id=60, 2509.375pt x 1492.57625pt>
+
+LaTeX Warning: Citation `Levoy06b' on page 11 undefined on input line 166.
+
+
+LaTeX Warning: Citation `Vaish06' on page 11 undefined on input line 168.
+
+
+LaTeX Warning: Reference `fig:seethrough_occluder2' on page 11 undefined on inp
+ut line 168.
+
+
+LaTeX Warning: Reference `fig:seethrough_nau' on page 11 undefined on input lin
+e 168.
+
+[11]
+
+LaTeX Warning: Citation `Anderson16' on page 12 undefined on input line 170.
+
+
+LaTeX Warning: Citation `Davis12' on page 12 undefined on input line 172.
+
+
+LaTeX Warning: Citation `Jachnik13' on page 12 undefined on input line 174.
+
+[12 <./images/stanford_camera_array.png (PNG copy)> <./images/lego_gantry.jpg>]
+
+LaTeX Warning: Reference `fig:camera_array' on page 13 undefined on input line 
+177.
+
+
+LaTeX Warning: Citation `Oberlin16' on page 13 undefined on input line 179.
+
+
+LaTeX Warning: Reference `fig:lytro_immerge' on page 13 undefined on input line
+ 181.
+
+<images/lytro_immerge.jpg, id=60, 2509.375pt x 1492.57625pt>
 File: images/lytro_immerge.jpg Graphic file (type jpg)
 
 <use images/lytro_immerge.jpg>
@@ -621,7 +865,35 @@ Overfull \hbox (7.08208pt too wide) in paragraph at lines 193--194
  [][] 
  []
 
+
+LaTeX Warning: Citation `Anderson16' on page 13 undefined on input line 194.
+
+
+LaTeX Warning: Citation `Anderson16' on page 13 undefined on input line 194.
+
+
+LaTeX Warning: Reference `fig:ardrone_image' on page 13 undefined on input line
+ 199.
+
+
+LaTeX Warning: Citation `Engel12' on page 13 undefined on input line 199.
+
+
+LaTeX Warning: Citation `Davis12' on page 13 undefined on input line 199.
+
+
+LaTeX Warning: Citation `Srikanth14' on page 13 undefined on input line 199.
+
+
+LaTeX Warning: Citation `Roberts16' on page 13 undefined on input line 199.
+
 [13 <./images/lytro_immerge.jpg> <./images/jump_vr_video_cameras.jpg>]
+
+LaTeX Warning: Citation `Ng05' on page 14 undefined on input line 202.
+
+
+LaTeX Warning: Citation `Ng06' on page 14 undefined on input line 202.
+
 <images/ng_typical.png, id=65, 541.02126pt x 406.51875pt>
 File: images/ng_typical.png Graphic file (type png)
 
@@ -639,8 +911,34 @@ File: images/ng_plenoptic.png Graphic file (type png)
 <use images/ng_plenoptic.png>
 Package pdftex.def Info: images/ng_plenoptic.png used on input line 216.
 (pdftex.def)             Requested size: 92.50748pt x 155.14276pt.
- [14 <./images/ng_typical.png> <./images/ng_plenoptic.png>] <images/synthetic_i
-mage_creation.png, id=72, 554.07pt x 189.70876pt>
+
+
+LaTeX Warning: Citation `Anderson16' on page 14 undefined on input line 217.
+
+
+LaTeX Warning: Citation `Anderson16' on page 14 undefined on input line 217.
+
+
+LaTeX Warning: Reference `fig:ng_typical' on page 14 undefined on input line 22
+1.
+
+
+LaTeX Warning: Reference `fig:ng_plenoptic' on page 14 undefined on input line 
+221.
+
+[14 <./images/ng_typical.png> <./images/ng_plenoptic.png>]
+
+LaTeX Warning: Citation `Levoy96' on page 15 undefined on input line 223.
+
+
+LaTeX Warning: Reference `fig:synthetic_image_creation' on page 15 undefined on
+ input line 223.
+
+
+LaTeX Warning: Reference `fig:reference_geometry' on page 15 undefined on input
+ line 231.
+
+<images/synthetic_image_creation.png, id=72, 554.07pt x 189.70876pt>
 File: images/synthetic_image_creation.png Graphic file (type png)
 
 <use images/synthetic_image_creation.png>
@@ -667,6 +965,20 @@ Overfull \hbox (6.68674pt too wide) detected at line 259
 
 [16 <./images/reference_geometry.png>] [17]
 Chapter 3.
+
+LaTeX Warning: Citation `baxter' on page 18 undefined on input line 272.
+
+
+LaTeX Warning: Citation `PR2' on page 18 undefined on input line 272.
+
+
+LaTeX Warning: Reference `fig:bax_ptam_variance' on page 18 undefined on input 
+line 274.
+
+
+LaTeX Warning: Reference `fig:bax_ptam_std_dev' on page 18 undefined on input l
+ine 274.
+
 <images/bax_and_ptam_var.png, id=88, 803.0pt x 602.25pt>
 File: images/bax_and_ptam_var.png Graphic file (type png)
 
@@ -698,12 +1010,36 @@ File: images/experiment_image.png Graphic file (type png)
 <use images/experiment_image.png>
 Package pdftex.def Info: images/experiment_image.png used on input line 290.
 (pdftex.def)             Requested size: 352.76903pt x 237.3876pt.
- [19 <./images/bax_and_ptam_var.png>] [20 <./images/bax_and_ptam_std_dev.png>]
+
+
+LaTeX Warning: Reference `fig:experiment_image' on page 19 undefined on input l
+ine 294.
+
+
+LaTeX Warning: Reference `fig:bax_ptam_variance' on page 19 undefined on input 
+line 296.
+
+
+LaTeX Warning: Reference `fig:bax_ptam_std_dev' on page 19 undefined on input l
+ine 296.
+
+
+LaTeX Warning: Citation `Mur-Artal15' on page 19 undefined on input line 296.
+
+[19 <./images/bax_and_ptam_var.png>] [20 <./images/bax_and_ptam_std_dev.png>]
+
+LaTeX Warning: Reference `fig:nau_collected_images' on page 21 undefined on inp
+ut line 304.
+
 <images/mosaic.jpg, id=103, 9124.0875pt x 2047.65pt>
 File: images/mosaic.jpg Graphic file (type jpg)
  <use images/mosaic.jpg>
 Package pdftex.def Info: images/mosaic.jpg used on input line 308.
 (pdftex.def)             Requested size: 410.56622pt x 92.14027pt.
+
+
+LaTeX Warning: Reference `fig:nau_collected_images' on page 21 undefined on inp
+ut line 312.
 
 <images/raytrix_raw.png, id=104, 2055.68pt x 2055.68pt>
 File: images/raytrix_raw.png Graphic file (type png)
@@ -711,14 +1047,46 @@ File: images/raytrix_raw.png Graphic file (type png)
 <use images/raytrix_raw.png>
 Package pdftex.def Info: images/raytrix_raw.png used on input line 316.
 (pdftex.def)             Requested size: 411.12872pt x 411.12872pt.
- [21 <./images/experiment_image.png>] [22 <./images/mosaic.jpg> <./images/raytr
-ix_raw.png (PNG copy)>]
+
+
+LaTeX Warning: Citation `Isaksen01' on page 21 undefined on input line 317.
+
+
+LaTeX Warning: Citation `Isaksen01' on page 21 undefined on input line 317.
+
+
+LaTeX Warning: Reference `fig:raytrix_raw' on page 21 undefined on input line 3
+20.
+
+
+LaTeX Warning: Citation `Perwass12' on page 21 undefined on input line 320.
+
+[21 <./images/experiment_image.png>] [22 <./images/mosaic.jpg> <./images/raytri
+x_raw.png (PNG copy)>]
+
+LaTeX Warning: Citation `Levoy96' on page 23 undefined on input line 323.
+
+
+LaTeX Warning: Citation `Isaksen01' on page 23 undefined on input line 323.
+
+
+LaTeX Warning: Citation `lfArchive' on page 23 undefined on input line 323.
+
 <images/mobile_focus.png, id=112, 533.995pt x 320.19624pt>
 File: images/mobile_focus.png Graphic file (type png)
 
 <use images/mobile_focus.png>
 Package pdftex.def Info: images/mobile_focus.png used on input line 326.
 (pdftex.def)             Requested size: 373.79395pt x 224.13583pt.
+
+
+LaTeX Warning: Citation `Isaksen01' on page 23 undefined on input line 327.
+
+
+LaTeX Warning: Citation `Isaksen01' on page 23 undefined on input line 327.
+
+
+LaTeX Warning: Citation `Levoy96' on page 23 undefined on input line 331.
 
 <images/nau_lf.png, id=113, 667.49374pt x 566.115pt>
 File: images/nau_lf.png Graphic file (type png)
@@ -753,9 +1121,38 @@ Underfull \hbox (badness 6047) in paragraph at lines 349--349
 []\OT1/cmr/m/n/12 Figure 3.9: An-other col-lec-tion
  []
 
-[23 <./images/mobile_focus.png>] [24 <./images/nau_lf.png> <./images/nau_occlud
-ing.png> <./images/seethrough_nau.png>] [25]
+[23 <./images/mobile_focus.png>]
+
+LaTeX Warning: Citation `Isaksen01' on page 24 undefined on input line 354.
+
+
+LaTeX Warning: Reference `fig:mobile_focus' on page 24 undefined on input line 
+354.
+
+
+LaTeX Warning: Citation `Levoy96' on page 24 undefined on input line 356.
+
+
+LaTeX Warning: Citation `lfArchive' on page 24 undefined on input line 356.
+
+
+LaTeX Warning: Reference `fig:light_field_system' on page 24 undefined on input
+ line 356.
+
+[24 <./images/nau_lf.png> <./images/nau_occluding.png> <./images/seethrough_nau
+.png>] [25]
 Chapter 4.
+
+LaTeX Warning: Reference `fig:lytro_immerge' on page 26 undefined on input line
+ 361.
+
+
+LaTeX Warning: Citation `Davis12' on page 26 undefined on input line 364.
+
+
+LaTeX Warning: Reference `fig:pr2_image' on page 26 undefined on input line 364
+.
+
 [26
 
 ] <images/pr2_image.jpg, id=129, 3758.04pt x 5637.06pt>
@@ -765,35 +1162,54 @@ File: images/pr2_image.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/pr2_image.jpg used on input line 368.
 (pdftex.def)             Requested size: 300.64934pt x 450.97401pt.
 
+
+LaTeX Warning: Reference `fig:ardrone_image' on page 27 undefined on input line
+ 372.
+
 <images/ardrone_image.png, id=130, 602.25pt x 322.95656pt>
 File: images/ardrone_image.png Graphic file (type png)
 
 <use images/ardrone_image.png>
 Package pdftex.def Info: images/ardrone_image.png used on input line 375.
 (pdftex.def)             Requested size: 240.89572pt x 129.18033pt.
- [27 <./images/pr2_image.jpg>] [28 <./images/ardrone_image.png>] [29] [30
+ [27 <./images/pr2_image.jpg>]
 
-] [31] [32] (./main.aux) ) 
+LaTeX Warning: Citation `Kalantari16' on page 28 undefined on input line 384.
+
+[28 <./images/ardrone_image.png>]
+
+LaTeX Warning: Citation `lfArchive' on page 29 undefined on input line 389.
+
+[29] [30
+
+] [31] [32] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  3340 strings out of 494985
  46176 string characters out of 6180356
- 200385 words of memory out of 5000000
+ 199966 words of memory out of 5000000
  6462 multiletter control sequences out of 15000+600000
  13049 words of font info for 50 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,9n,24p,1405b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (33 pages, 16785623 bytes).
+ 38i,9n,27p,1405b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+12.pfb>
+Output written on main.pdf (33 pages, 16787575 bytes).
 PDF statistics:
  188 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams
