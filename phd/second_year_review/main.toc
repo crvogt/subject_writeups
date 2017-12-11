@@ -1,0 +1,18 @@
+\contentsline {chapter}{\numberline {1}Introduction}{5}
+\contentsline {chapter}{\numberline {2}Literature Review}{8}
+\contentsline {section}{\numberline {2.1}Early Research and Derivation from Plenoptic Function}{9}
+\contentsline {section}{\numberline {2.2}Light Field Sampling}{10}
+\contentsline {section}{\numberline {2.3}Image Interpolation}{11}
+\contentsline {section}{\numberline {2.4}Application of Light Fields}{12}
+\contentsline {section}{\numberline {2.5}Future Collection Methods}{14}
+\contentsline {section}{\numberline {2.6}Light Field Photography}{15}
+\contentsline {chapter}{\numberline {3}Progress to Date}{19}
+\contentsline {section}{\numberline {3.1}Comparison of Platforms}{19}
+\contentsline {subsection}{\numberline {3.1.1}Baxter and PTAM}{20}
+\contentsline {subsection}{\numberline {3.1.2}Accuracy, ORB-SLAM2 and the PR2}{22}
+\contentsline {section}{\numberline {3.2}Collected Light Fields}{23}
+\contentsline {section}{\numberline {3.3}System Built}{25}
+\contentsline {chapter}{\numberline {4}Research Going Forward}{32}
+\contentsline {section}{\numberline {4.1}Analysis of Ray Space}{32}
+\contentsline {section}{\numberline {4.2}Creation of a Uncertainty-Based Renderer}{33}
+\contentsline {section}{\numberline {4.3}Next Steps}{35}

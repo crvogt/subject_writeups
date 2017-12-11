@@ -1,0 +1,44 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[tmargin=2cm, lmargin=4cm, rmargin=2.5cm, bmargin=4cm, paperwidth=8.267in, paperheight=11.692in]{geometry}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{indentfirst}
+\usepackage{lipsum}
+\usepackage{verbatim}
+\usepackage{titlepic}
+\usepackage{amsmath}
+%\usepackage{titlesec}
+
+\begin{document}
+$$
+\begin{bmatrix}
+    x_1  & x_2 & x_3 \\
+    y_1 & y_2 & y_3 \\
+    1 & 1 & 1
+\end{bmatrix} \lambda = 
+\begin{bmatrix}
+	x \\ y \\ 1
+\end{bmatrix}
+$$
+
+\vspace{1cm}
+
+$$
+\begin{bmatrix}
+    \langle x_1 \rangle  & \langle x_2 \rangle & \langle x_3 \rangle \\
+    \langle y_1 \rangle & \langle y_2 \rangle & \langle y_3 \rangle \\
+    1 & 1 & 1
+\end{bmatrix} \lambda = 
+\begin{bmatrix}
+	\langle x \rangle \\ \langle y \rangle \\ 1
+\end{bmatrix}
+$$
+
+\vspace{1cm}
+
+The expected value of a Gaussian is simply the mean. My thinking then is, to implement this I would go through the position values and for x, y, and z, find the equation of the best fit Gaussian for the data, and remove the offset of each point from the mean. 
+
+\end{document}

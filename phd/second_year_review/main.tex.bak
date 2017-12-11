@@ -1,0 +1,182 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[margin=1in, paperwidth=8.5in, paperheight=11in]{geometry}
+\usepackage{amsfonts}
+\usepackage{array}
+\graphicspath{ {images/} }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{Thesis Title}
+\author{
+Carson Vogt\\
+\and
+Supervisor: Subramanian Ramamoorthy
+}
+\date{15 August 2015}
+\begin{figure}[b]\begin{flushright}\includegraphics[scale=0.5]{rad.jpg}\end{flushright}
+%\begin{flushleft}\includegraphics[scale=0.5]{university_edinburgh.jpg}\end{flushleft}
+\end{figure}
+\maketitle
+%...will work on the images
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+\begin{small}
+
+Most UAVs (unmanned aerial vehicle) used today are emplyed for photography, search and rescure, or infrastructure monitoring, such as with pipelines or agriculture. However, relatively little attention has been payed to the medium in which the UAV operates: the atmosphere.
+
+This work presents a system designed to utilize an autonomous UAV as a measurement tool, employing state of the art machine learning techniques and relying on atmospheric readings to reconstruct, interpolate, and regress the vector field through which it has flown. Such techniques can yield landscape features from wind patterns, weather prediction, and infrastructure optimization for wind farms.
+
+The focus of the work is on the system as a whole, from the platform that was tediously tuned and assembled, to the algorithms governing the method by which regression occurs and data is interpolated.
+
+Future work of interest, such as Lagrangian coherent structures (LCS), is also covered somewhat. Using such a platform to monitor and predict LCSs has huge applications in disaster relief, pollutant tracking, and flight path optimization.
+\end{small}
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Declaration}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Background and Research}
+\section{Nowcasting and LCS}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Platform}
+
+\section{Airframe}
+In order to achieve the goal of covering a large area with current aerial 
+technology on a budget, a powered glider platform was chosen, as shown in Figure~\ref{fig:Assembled plane on table}
+\begin{figure}[here]
+\begin{center}
+\includegraphics[scale=0.1]{planeOnTable.jpg}
+\end{center}
+\caption{Aircraft platform with sensors, autopilot, and radios}
+\label{fig:Assembled plane on table}
+\end{figure}
+The airframe is a two-meter wingspan powered glider with a folding propellor 
+to increase efficiency when gliding. The maximum speed of the aircraft has to 
+date been measured to be approximately 16 meters per second, with flight times 
+in high wind at 20 +- 2 minutes.
+
+\section{Autopilot}
+The autopilot computer is a 32 bit STM32F427 ARM Cortex M4 processor. Running 
+at 168 MHz with 256 KB of RAM and 2MB of Flash memory. The autopilot itself 
+runs currently runs opensource code organized by 3D Robotics only, with no 
+modifications made. It is used purely as a computer for networking and 
+relaying and collecting data using the 3DR radio with frequency 433MHz(necessary?)
+
+\section{Sensors}
+The list of sensors consists of
+\begin{itemize}
+\item autpilot computer (ARM Cortex M4)
+\item barometer (MEAS MS5611)
+\item gyroscope (ST Micro L3GD20 3-axis 16-bit/Invensense MPU 6000 3-axis)
+\item accelerometer (ST Micro LSM303D 3-axis 14-bit)
+\item magnetometer (ST Micro LSM303D)
+\item pressure transducer  with pitot tube(Measurement Specialties 4525DO)
+\item GPS (ublox LEA-6H)
+\item compass (ublox LEA-6H)
+\end{itemize}
+The barometer is used to detect changes in air pressure. On startup, the 
+sensor is initialized and zeroed for flight. Aside from being used for 
+altitude measurement, it can also be used to detect relative or overall 
+changes in air pressure, such as in the event of weather fronts etc.  
+The magnetometer and GPS module act as one and provide direction in compass 
+heading, and location in latitude and longitude
+
+\section{ROS}
+
+ Spektrum DX8 transmitter with AR8000 receiver (2.4GHz)
+ PC
+
+Measurements are taken from the Pixhawk autopilot to the computer and routed 
+through Robot Operating System (ROS) for analysis. An airspeed vector is 
+generated from the pressure transducer and coupled with the compass heading. 
+Obviously, this does not necessarily mean that that is the true windspeed or 
+direction, but merely indicates the direction the plane is pointing and the 
+apparent airspeed. The groundspeed is also required for accurate measurements 
+and this is given as a magnitude, based on GPS. However, the groundspeed does 
+not reflect the orientation of the aircraft
+Data is siphoned into blocks that hold the measurements from the plane's 
+flight. Enough data points should be built up before a block can be 
+expressed as a measurement. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Computing, algorithms}
+
+Gaussian processes are an excellent method for determining the underlying function behind data if the function is not known and appears non-parametric. As well, Gaussian process regression (GPR) 
+
+The general form of the Gaussian process is given as $$GP~\mathematical{N}(\mu,\Sigma)$$
+\section{Interpolation}
+There are a number of methods available to interpolate somewhat sparse wind 
+vector data, a popular one of which is Krigin Inerpolation [Liu].
+\subsection{Kernel Selection}
+Kernel choice is an important part of the Gaussian process. For the purpose of 
+this work, the squared exponential was the first choice, though others were 
+explored
+\subsection{Cross Validation}
+Choosing hyper-parameters.  They are simply called hyperparameters to set them apart from parametric model parameters. One of the problems with supervised learning really is that parameters must be set for the following inputs to be appropriately mapped to an output and vice versa.  Cross validation has it's own issues in that it requires a portion of the data to be set aside as the training data, and the rest of it to be used as test data.
+
+\begin{eqnarray}
+Z(x)=\mu(x)+\varepsilon(x)\ x\epsilon\Omega %Not sure how to get a space here
+\end{eqnarray}
+\section{Vector Field Regression}
+Gaussian processes were the method of choice for interpolation purposes. The 
+non-parametric model is widely used and makes the most sense for this 
+application given that the model is not known, and may vary from location to 
+location.
+\begin{eqnarray}
+GP=N(\mu,\Sigma)%should have sim
+\end{eqnarray}
+\section{Feature Recognition}
+Feature recognition is a natural follow up to the early research. Mapping of the vector field suggests that some extra data can be found by analyzing the resulting field. With some training data and prior knowledge of the landscape influencing the vector field, features, such as mountains, can be picked out by simply looking at the wind data, rather than relying on cameras or rangefinders. Other features might be locating thermals and updrafts, but this will be saved for future research as this paper is only concerned with 2D vectors in a 3D space.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Implementation}
+\section{C++/MATLAB Libraries}
+Using ROS, nodes were written in C++. For simulation and post-processing purposes, much of the code was written in C++ with the intent of integrating it into further nodes or services within ROS.
+
+MATLAB was also used, particularly for the ease of visualization, animation, and some of the work with matrices, though packages such as Eigen are available for C++
+\section{Data Collection}
+Navigation During Data Collection
+How we go about visiting other points – density-based decision making for 
+further measurements within an area?
+
+\chapter{Results}
+Resulting function may be harder to display with multidimensional input, according to Rassmussen.
+\section{Vector Field}
+\section{vector Field Regression}
+\section{Weather Prediction}
+\section{Feature Recognition}
+
+\chapter{Conclusion and Future Work}
+long distance LCS for swarms, disaster relief, etc %\cite{Liu01}
+
+
+\begin{thebibliography}{10}%Any two digit number for more than nine references
+
+\bibitem{Bohling05}
+	Bohling, Geoff, \emph{Kriging},
+	http://people.ku.edu/~gbohling/cpe940/Kriging.pdf, 
+	2005
+\bibitem{Liu01}
+	Lee Liu,
+	Liu, \emph{Research on the Method of Wind Speed Interpolation : 	Based on Spaitally Anisotropic Analysis},
+	Wesley, Massachusetts,
+	2nd edition,
+	1994
+\bibitem{Peacock13}
+	Peacock, Thomas; Haller, George; \emph{Lagrangian coherent structures: The hidden skeleton of fluid flows},
+	Physics Today,
+	2013
+\bibitem{Rasmussen06}
+	Rasmussen, C. E.; Williams, C. K. I.; \emph{Gaussian Processes for Machine Learning},
+	MIT Press,
+	2006
+\end{thebibliography}
+
+01316683351, 2pm
+
+\end{document}
