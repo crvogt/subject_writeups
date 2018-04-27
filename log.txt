@@ -1,0 +1,50 @@
+27 April 18
+-Trying to figure out data abstraction for C++, specifically, trying to get an idea for how to structure the massive project that is sort of coming together.
+I currently have the idea for a LightField Class, but I have a number of other classes/methods that need to go into it without necessarily rewriting all of those.
+More importantly though, I need to get this structure from motion stuff working so I can get the depth. Once I get the depth, I'll still need to add it to the 
+DL program. *Also need to look at the SIGGRAPH documentation and figure out what to start writing for that!
+Something along the lines of creating a new dataset, using deep learning on it, getting depth from it.
+So, two big things for the next few days:
+Start SIGGRAPH Paper
+LightField Class
+-------------------------------------------------------------
+LightField Class Structure
+
+
+SFMModule	GeneralRender		ImageRenderer		GetAndTriangulate
+private
+-Match		-			-			-		
+-CheckRot	-			-			-	
+-FindCamMat	-			-			-	
+-Triang		-			-			-	
+-		-			-DrawAperture		-	
+public
+-SavePCD	-			-CBinMain!		-GetImages	
+-		-			-			-Triangulate	
+-		-			-			-Normalize	
+-		-			-			-CalculateArea	
+LightField Class:
+private
+-LoadImages - easy from gat
+-NormalizeVector - depends
+-Load Poses - easy from gat
+
+public
+-TriangulateLf
+
+-PercentOfLF
+-PointsInFace
+-FaceVertices
+
+-DepthMultiView - do now
+-DepthFromDefocus - for later
+-DepthFromSfm - gotta work on
+-ViewByRays - for later
+-GeneralRender - calls a run func or something
+
+Will also need to add visualizer for point clouds
+Note that there are a number of functions hidden in the iccp tests etc
+
+
+
+

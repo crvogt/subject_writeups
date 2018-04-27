@@ -1,0 +1,60 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[tmargin=2cm, lmargin=4cm, rmargin=2.5cm, bmargin=4cm, paperwidth=8.267in, paperheight=11.692in]{geometry}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{indentfirst}
+\graphicspath{ {images/} }
+\usepackage{lipsum}
+\usepackage{verbatim}
+\usepackage{titlepic}
+\usepackage{amsmath}
+%\usepackage{titlesec}
+
+\begin{document}
+
+\title{Analysis of Light Field Sampling Using Robots and CNNs \vspace{2.5cm}}	
+\author{
+\Large Carson Vogt \vspace{1cm} \\ 
+}
+
+
+\maketitle
+
+\section*{Abstract}
+It is the goal of this project to explore the use of CNNs to construct a light field partially collected by a robot. While other groups have used deep learning to create new images in a light field, none have applied it to the robotic collection use case which comes with its own set of challenges. It is my hope that by the end of this, there will be a demonstrable network that fills in a sparsely sampled, unstructured light field collected by a robot. 
+
+\section*{The Problem}
+There are currently no papers addressing the reconstruction of unstructured light fields. While there is one paper on the subject \cite{Davis12}, construction of novel views is limited to barycentric interpolation. 
+
+While most light fields are captured using a light field camera, angular capture is limited to the camera itself. For situations where an adaptable capture system is required, a robot moving a camera makes sense as the available movements and locations for data capture are diverse, and each location is also given a position and orientation. Be it analysis of a structure that is difficult for a human to reach, or analysis of a subject in a hazardous environment, a robot collected light field makes a lot of sense. Therefore, exploring reconstruction of a partially collected, unstructured light field from a robot is a worthwhile pursuit. 
+
+\section*{Progress to Date}
+\subsection*{Dataset Creation}
+Each set of data collected results in 35 to 40000 images. Each set is run through a pruning algorithm, yielding 8 to 13000 images, though this can vary depending on the aggressiveness of the pruning.
+Next, using the parse-location.cpp file in lightfield-ws-dla-cpp-src folder, the location information is converted to a format easy for matlab to determine.
+
+Next, the parameterization is calculated using one of the functions in the parameterization folder, currently containing a sphere and plane, sphere in sphere, and soon a sphere on sphere parameterization. Once the parameterizations have been written, the triangulation can commence. 
+
+Triangulation and splitting of the data is handled by the triangulate-data.m file, located in the matlab folder in dla. It will split the data based on a delaunay triangulation, then split that resulting data into training and test data. *Note may need to check on the actual randomness to make sure there is no patter to how matlab is choosing the training and test triangles.
+
+\begin{thebibliography}{10}%Any two digit number for more than nine references
+\bibitem{Davis12}
+	Davis, A., Levoy, M., and Durand, F., \emph{Unstructured Light Fields} (2012). Eurographics 2012, no. 31.
+
+\bibitem{Flynn15}
+	Flynn, J., Neulander, I., Philbin, J., and Snavely, N. \emph{DeepStereo: Learning to Predict New Views from the World's Imagery} (2015).
+
+\bibitem{Kalantari16}
+	Kalantari, N. K., Wang, T. and Ramamoorthi, R., \emph{Learning-Based View Synthesis for Light Field Cameras} (2016). SIGGRAPH Asia '16.
+		
+\bibitem{Shi14}
+	Shi, L., Hassanieh, H., Davis, A., Katabi, D. and Durand, F., \emph{Light Field Reconstruction Using Sparsity in the Continuous Fourier Domain} (2014). ACM Transactions on Graphics. no. 34.
+
+\bibitem{Wu17}
+	Wu, G., Zhao, M., Wang, L., Dai, Q., Chai, T., and Liu, Y., \emph{Light Field Reconstruction Using Deep Convolutional Network on EPI} (2017). CVPR.
+
+\end{thebibliography}
+
+\end{document}
