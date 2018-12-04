@@ -1,0 +1,23 @@
+What to do next with the light efficient photography.
+
+What we have:
+	-Same disparity cnn as in both ucsd lf papers
+
+
+Need to do
+
+
+	
+	For depth CNN
+		-How to input data into the CNN
+			-Already storing depth features from whole lf 
+			-Only requires the lf
+	||
+	||
+	\/
+	Once we have disparity
+		-Warp images to center position, these will be used to compare/improve on 
+			depth map
+		-Use interp2 function
+
+Structure
