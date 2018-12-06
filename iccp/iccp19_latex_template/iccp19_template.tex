@@ -1,0 +1,288 @@
+%% iccp19_template.tex
+%% Created by Jean-Francois Lalonde from the 'bar_jrnl_transmag.tex' V1.4b file.
+%% see http://www.jflalonde.ca
+%% for current contact information. 
+%%
+%% 'bar_jrnl_transmag.tex' V1.4b file created by
+%% Michael Snell
+%% see http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.8b or later) with an IEEE 
+%% Transactions on Magnetics journal paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/pkg/ieeetran
+%% and
+%% http://www.ieee.org/
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE! 
+%% User assumes all risk.
+%% In no event shall the IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%*************************************************************************
+
+
+% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
+% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
+% *** with production work. The IEEE's font choices and paper sizes can   ***
+% *** trigger bugs that do not appear when using other class files.       ***                          ***
+% The testflow support page is at:
+% http://www.michaelshell.org/tex/testflow/
+
+\documentclass[transmag,letterpaper]{IEEEtran}
+\newif\ifpeerreview
+
+% IMPORTANT: for an ICCP submission, uncomment the following line:
+\peerreviewtrue
+% For camera-ready, uncomment:
+% \peerreviewfalse
+
+% Please insert your paper ID here: 
+\newcommand{\paperID}{XXXX}
+
+% For the camera-ready, use the following (replaces the 'peerreview' with the 'journal' option): 
+% \documentclass[journal,transmag,letterpaper]{IEEEtran}
+
+% Line numbering (activated only in the 'peerreview' model)
+\usepackage{lineno}
+
+% Some very useful LaTeX packages include:
+\usepackage{cite}
+\usepackage{url}
+\usepackage{lipsum}
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  % \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+
+% activate line numbering to help with the review process
+\ifpeerreview
+  \linenumbers
+  \linenumbersep 5pt\relax
+\fi 
+
+%
+% paper title
+% Titles are generally capitalized except for words such as a, an, and, as,
+% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
+% not capitalized unless they are the first or last word of the title.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+\title{Bare demo of IEEEtran.cls for the\\ IEEE International Conference on Computational Photography}
+
+
+
+% author names and affiliations
+% transmag papers use the long conference author name format.
+
+\ifpeerreview
+% Do not display author names for peer review since ICCP is double-blind. 
+\author{Anonymous ICCP 2019 submission \\
+Paper ID \paperID}
+\else
+\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
+Homer Simpson\IEEEauthorrefmark{2},
+James Kirk\IEEEauthorrefmark{3}, 
+Montgomery Scott\IEEEauthorrefmark{3}, and
+Eldon Tyrell\IEEEauthorrefmark{4},~\IEEEmembership{Fellow,~IEEE}}
+\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering,
+Georgia Institute of Technology, Atlanta, GA 30332 USA}
+\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA}
+\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, CA 96678 USA}
+\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, CA 90210 USA}% <-this % stops an unwanted space
+\thanks{Manuscript received December 1, 2012; revised August 26, 2015. 
+Corresponding author: M. Shell (email: http://www.michaelshell.org/contact.html).}}
+\fi
+
+
+% The paper headers
+\ifpeerreview
+\markboth{Anonymous ICCP 2019 submission ID \paperID}%
+{}
+\else
+\fi
+
+
+
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract or keywords.
+\IEEEtitleabstractindextext{%
+\begin{abstract}
+The abstract goes here. \lipsum[1-1]
+\end{abstract}
+
+% Note that papers under review do not need to provide keywords
+\ifpeerreview
+\else
+\begin{IEEEkeywords}
+computational photography
+\end{IEEEkeywords}
+\fi
+}
+
+
+% make the title area
+\maketitle
+
+
+% To allow for easy dual compilation without having to reenter the
+% abstract/keywords data, the \IEEEtitleabstractindextext text will
+% not be used in maketitle, but will appear (i.e., to be "transported")
+% here as \IEEEdisplaynontitleabstractindextext when the compsoc 
+% or transmag modes are not selected <OR> if conference mode is selected 
+% - because all conference papers position the abstract like regular
+% papers do.
+\IEEEdisplaynontitleabstractindextext
+% \IEEEdisplaynontitleabstractindextext has no effect when using
+% compsoc or transmag under a non-conference mode.
+
+
+
+
+
+
+
+\section{Introduction}
+% The very first letter is a 2 line initial drop letter followed
+% by the rest of the first word in caps.
+% 
+% form to use if the first word consists of a single letter:
+% \IEEEPARstart{A}{demo} file is ....
+% 
+% form to use if you need the single drop letter followed by
+% normal text (unknown if ever used by the IEEE):
+% \IEEEPARstart{A}{}demo file is ....
+% 
+% Some journals put the first two words in caps:
+% \IEEEPARstart{T}{his demo} file is ....
+% 
+% Here we have the typical use of a "T" for an initial drop letter
+% and "HIS" in caps to complete the first word.
+\IEEEPARstart{T}{his} demo file is intended to serve as a ``starter file''
+for submitting to the IEEE International Conference on Computational Photography. Example citation:~\cite{kopka-latex}. \lipsum[2-2]
+% You must have at least 2 lines in the paragraph with the drop letter
+% (should never be an issue)
+ 
+
+\subsection{Subsection Heading Here}
+Subsection text here. 
+
+\subsubsection{Subsubsection Heading Here}
+Subsubsection text here.
+
+
+
+
+
+\section{Conclusion}
+The conclusion goes here.
+
+
+
+
+
+% only include the acknowledgements in the camera-ready
+\ifpeerreview
+\else
+% use section* for acknowledgment
+\section*{Acknowledgment}
+
+The authors would like to thank...
+
+\fi
+
+% references section
+\bibliographystyle{IEEEtran}
+\bibliography{iccp19_bib}
+
+
+% biography section -- this is only for the camera-ready version. 
+\ifpeerreview
+\else
+% 
+% If you have an EPS/PDF photo (graphicx package needed) extra braces are
+% needed around the contents of the optional argument to biography to prevent
+% the LaTeX parser from getting confused when it sees the complicated
+% \includegraphics command within an optional argument. (You could create
+% your own custom macro containing the \includegraphics command to make things
+% simpler here.)
+%\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
+% or if you just want to reserve a space for a photo:
+
+\begin{IEEEbiography}{Michael Shell}
+Biography text here.
+\end{IEEEbiography}
+
+% if you will not have a photo at all:
+\begin{IEEEbiographynophoto}{John Doe}
+Biography text here.
+\end{IEEEbiographynophoto}
+
+% insert where needed to balance the two columns on the last page with
+% biographies
+%\newpage
+
+\begin{IEEEbiographynophoto}{Jane Doe}
+Biography text here.
+\end{IEEEbiographynophoto}
+
+\fi
+
+
+
+
+% that's all folks
+\end{document}
+
+
