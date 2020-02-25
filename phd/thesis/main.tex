@@ -1,0 +1,65 @@
+\documentclass[12pt]{report}
+\begin{document}
+
+And so it begins
+
+\chapter{Introduction}
+
+\section{Thesis Roadmap}
+\section{Light field background}
+
+why don't traditional methods work with light fields?
+Why don't methods adapted for typical light fields work with our light fields?
+
+\chapter{Robotic Collection and Rendering of Light Fields}
+\section{methods for collection}
+Gauging what robots are sufficient, and if robots aren't sufficient, how do slam methods work if I was to just move the robot arm around?
+Graphs should be floating around somewhere for this.
+
+Review your previous years reviews as well for this earlier stuff.
+\section{methods for rendering}
+\subsection{traditional methods}
+synthetic aperture dependent on parameterizations
+drawbacks
+
+\section{focused plenoptic cameras}
+moving on to different types of plenoptic cameras
+
+Outline the different ways of rendering, and do it mathematically in terms of how you dehex and 1D interpolate to get sais
+
+Then show how this is unnecessary for focused cameras.
+Possible to show aperture abilities/refocusing based on depth? that'd be a nice little addition.
+
+Don't forget to pull from 3d images from focused plenoptic cameras and their versions of pulling data.
+
+Don't forget your structure from motion.
+
+\chapter{Low Light Light Field}
+\section{A Low-Light Dataset}
+
+\section{Looking at low light}
+
+\chapter{Depth from Low Light}
+\section{creating the depth network and a back prop method for light fields}
+Showing the movement of lenses
+
+How does the cost volume work and what is it we propose to learn?
+
+What is the problem with cost volumes?
+
+How do you deal with very low resolution images?
+
+What's the deal with network structure in the sense of starting large and compressing down for features?
+\section{Video}
+Struggles of capturing a video dataset for low light enhancement
+
+At some point, perhaps outline what makes for good depth maps.
+
+\subsection{Temporal Noise and Exposure Variation}
+\subsection{Learning Exposure Values}
+
+\chapter{Burst low light}
+
+\chapter{Conclusion}
+
+\end{document}

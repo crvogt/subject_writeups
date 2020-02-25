@@ -1,0 +1,338 @@
+%% iccp20_template.tex
+%% Created by Ayan Chakrabarti from the IEEE bare_jrnl_compsoc.tex file.
+%%
+%% bare_jrnl_compsoc.tex
+%% V1.4b
+%% 2015/08/26
+%% by Michael Shell
+%% See:
+%% http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.8b or later) with an IEEE
+%% Computer Society journal paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/pkg/ieeetran
+%% and
+%% http://www.ieee.org/
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE! 
+%% User assumes all risk.
+%% In no event shall the IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%*************************************************************************
+
+
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+\newif\ifpeerreview
+
+%%% Important: for camera ready submissions, replace the following line
+%%% with \peerreviewfalse
+\peerreviewtrue
+
+
+\usepackage[nocompress]{cite}
+\usepackage{url}
+\usepackage{amsmath,amssymb,graphicx}
+
+\usepackage{lipsum} % Only used to generate random text.
+
+
+\usepackage[switch]{lineno}
+
+% Insert your paper ID and information below
+\newcommand{\paperID}{XXXX}
+
+% Enter your paper title below
+\title{Light Field Enhancement in Low Light Using a Lens-Based Depth}
+
+% Enter your author information before
+% Note this is only necessary for the camera review. Submissions are anonymized.
+\author{Carson Vogt,~\IEEEmembership{Member,~IEEE,}
+        and~Jane~Doe,~\IEEEmembership{Life~Fellow,~IEEE}% <-this % stops a space
+\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem M. Shell is with the Department
+of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
+GA, 30332.\protect\\
+% note need leading \protect in front of \\ to get a newline within \thanks.
+E-mail: see http://www.michaelshell.org/contact.html
+\IEEEcompsocthanksitem J. Doe is with Anonymous University.}% <-this % stops an unwanted space
+}
+
+
+\begin{document}
+% High
+% interest
+% One line intro
+% One-three line summary
+% What we can show
+% Importance
+
+\IEEEtitleabstractindextext{%
+\begin{abstract}
+Outside of the laboratory, light and time are rarely things that can be counted on for consistency. Being able to collect a sample of data quickly and under uncertain conditions is an advantage for a computer vision system. Much interest has been shown in using light fields that can provide high quality data in areas where environment variables are uncertain. In this paper, we investigate the problem of enhancing light fields with state of the art enhancement techniques. We focus on using deep learning to enhance the low light light fields, and add our own loss and gradient to improve it. the qualities that make light fields unique, such as perspective shifts, depth, and 2D synthetic views. We show that by adding depth as loss in a neural network, we are able to improve our light field.
+\end{abstract}
+
+\begin{IEEEkeywords} % Enter keywords here
+Computational Photography
+\end{IEEEkeywords}
+}
+
+
+% Make Title
+\ifpeerreview
+\linenumbers \linenumbersep 15pt\relax 
+\author{Paper ID \paperID\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem This paper is under review for ICCP 2020 and the PAMI special issue on computational photography. Do not distribute.}}
+\markboth{Anonymous ICCP 2020 submission ID \paperID}%
+{}
+\fi
+\maketitle
+
+
+
+% The first section title should be wrapped inside a \IEEEraisesectionheading as follows.
+\IEEEraisesectionheading{
+  \section{Introduction}\label{sec:introduction}
+}
+% The very first letter of the paper is a 2 line initial drop letter
+% followed by the rest of the first word in caps.
+% 
+% form to use if the first word consists of a single letter:
+% \IEEEPARstart{A}{demo} file is ....
+% 
+% form to use if you need the single drop letter followed by
+% normal text (unknown if ever used by the IEEE):
+% \IEEEPARstart{A}{}demo file is ....
+% 
+% Some journals put the first two words in caps:
+% \IEEEPARstart{T}{his demo} file is ....
+% 
+% Here we have the typical use of a "T" for an initial drop letter
+% and "HIS" in caps to complete the first word.
+
+% We introduce what the paper is about - Low Light Enhancement
+\IEEEPARstart{L}{ow} light image enhancement.  
+
+Passive sensor is required in the case of filming animals, for archival purposes, quality control, space, or for situations when lighting simply isn't optimal.
+
+Depth might also be a requirement, and for a light field, depth and 2D reconstruction are tied together (Georgiev).
+
+There's lots of research regarding low light enhancement of 2D images, but nothing for Light Fields. 
+
+The total spatial resolution for the light field camera is comparable to that of traditional cameras, but the micro lens array (MLA) splits the main image into smaller versions (Perwass), introducing an angular component
+
+The light field can yield Sub aperture images, depth, and synthesized 2D images.
+
+Sub aperture images (SAIs) are generally extracted from the light field at one pixel per lens, followed by a 1D interpolation to de-hex the image. The resulting resolution for each SAI is a fraction of the resolution of the center. 
+
+Most research relies on the size of the image sensor for adequately sized SAIs, and perform 
+
+Keeping the MLA structure intact let's us utilize sampling techniques that allow us to get greater resolution images per light field than SAI sampling.
+
+(remember the Brown paper regarding light fields for robotics)  
+and remember the metric values, and how does this compare with the stereo system? Do we even want to open that up?
+
+% What will we do that is different to improve low light light fields.
+The U-Net architecture has good results with 2D low light image enhancement (cite learning to see in the dark).
+
+SAIs and the processed light field are improved according to our metrics, but depth and depth-based results remain degraded
+
+% For submissions for review, the paper uses the lineno package which
+% might require you to compile under latex twice to get the line numbers
+% to align correctly.
+
+\begin{figure}
+\includegraphics[width=\linewidth, keepaspectratio]{figures/proc_psnr.pdf}
+    \caption{\label{fig:fig_one} Would like this to show that our method is the best overall. Need to think of the best way to represent this.}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\linewidth, keepaspectratio]{figures/savefig.png}
+    \caption{\label{fig:fig_d} Side by side comparison showing the enhanced processed image, but depth remaining the same, along with the plots that support this}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\linewidth, keepaspectratio]{figures/depth_psnr.pdf}
+    \caption{\label{fig:fig_rankings} Would like this plot to show the problem, that while overall quality is improved, clearly it doesn't translate over to depth estimate becoming significantly better. Perhaps a badpix representation would be more suitable}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\linewidth, keepaspectratio]{figures/BadPix.pdf}
+    \caption{\label{fig:fig_bad} BadPix for each method as an average of all light field depths. This shows that for each threshold, our method has the fewest number of incorrect depths.}
+\end{figure}
+
+\begin{figure*}
+\begin{centering}
+\begin{tabular}{@{}cc@{\,}c@{\,}c@{\,}c@{\,}}
+%	& col label & col label2 \\
+\rotatebox{0}{a}
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png}  
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png} 
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png}
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png}\\
+\rotatebox{0}{b}
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png} 
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png} 
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png}
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png}\\
+\rotatebox{0}{c}
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png} 
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png} 
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png}
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png}\\
+\rotatebox{0}{d}
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png} 
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png} 
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png}
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png}\\
+\rotatebox{0}{e}
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png} 
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png} 
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png}
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png}\\
+\rotatebox{0}{f}
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png} 
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png} 
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png}
+    & \includegraphics[width=.215 \linewidth]{figures/savefig.png}\\
+\end{tabular}
+\caption{\label{fig:table_of_lfs} A comparison of enhancement techniques applied to our test, low-light lightfield dataset.}
+\end{centering}
+\end{figure*}
+
+% \begin{figure}[!t]
+% \centering
+% \framebox[\columnwidth]{\parbox{0.9\columnwidth}{~\\~\\~\\~\\~\\}}
+% \caption{Example one-column figure.}
+% \end{figure}
+
+
+\section{Related Work}
+\subsection{Low Light Enhancement}
+There has not been research done on low light light fields, or light field SAIs.
+
+the work focused on 2D image enhancement. What work has been done on light fields has been focused on denoising, and then, largely on the SAIs rather than the raw light field. 
+
+\subsection{Denoising}
+Light field denoising is generally carried out on the SAIs. 
+
+LFBM5D utilizes the angular data within the SAIs.
+
+\begin{figure*}[!t]
+\centering
+\framebox[\textwidth]{\parbox{0.9\textwidth}{~\\~\\~\\~\\~\\~\\~\\}}
+\caption{Example two-column figure.}
+\end{figure*}
+
+\section{Method}
+We combine multiple methods, combining the U-Net, ResNet, GC-Net and light field multi-view stereo by Palmieri.
+
+The U-Net architecture provides the overall enhancement of the light field. Patches of the light field are fed through it and compared with a ground truth.
+
+The patches are upsampled to allow for network structure (cite low resolution deep learning paper)
+
+Lenses are extracted from this patch and features are extracted from each via a Siamese ResNet architecture with as many towers as lenses extracted.
+
+The lens features are combined into a cost volume. Similar to GC-Net, the volume is made up of concatenated features and a 3D convolution process regularizes the depth map in place of the traditional stereo regularization pipeline.
+
+The ground truth is based on reference, high light light fields taken of a static scene. 
+
+The depth reference is generated by the PlenopticToolbox2.0.
+
+In using the lenslets, we increase the total number of depth maps. For each light field, depth is calculated for each lens, effectively yielding 8700 depth maps per light field.
+
+\section{Experiments and Results}
+We chose to use the metrics seen here as little research has been done regarding the best way to qaulitatively assess a light field, especially given the number of medium niches a light field can occupy. What work there is has yielded inconclusive results. (see study on impact of vis techniques).
+
+\section{Conclusion}
+
+Look at "Towards a Quality Metric for Dense Light Fields" as a counter to using viewers. It seems to validate the idea that the metrics they introduce line up nicely with the subjective results. 
+
+Since "Towards a Quality.." is largely based on the quality of viewing (hence the stereo etc comparators), we're interested in more than just viewing, so we can look to epi-net and epi-shift for BadPix (0.7, 0.3, 0.1) metrics
+
+% \begin{table}[!t]
+% \renewcommand{\arraystretch}{1.3}
+% \caption{An Example of a Table}
+% \centering
+% \begin{tabular}{c||c|c|c}
+% \hline
+% One & Two & One & Two\\
+% \hline\hline
+% Three & Four &Three & Four\\
+% \hline
+% Three & Four &Three & Four\\
+% \hline
+% Three & Four &Three & Four\\
+% \hline
+% \end{tabular}
+% \end{table}
+
+
+% Any acknowledgments to only be included in camera ready
+\ifpeerreview \else
+\section*{Acknowledgments}
+The authors would like to thank...
+\fi
+
+\bibliographystyle{IEEEtran}
+
+
+\ifpeerreview \else
+%%%% For the camera ready version, please fill out this
+%%%% biography. Your camera ready should be within a 12 page limit
+%%%% including acknowledgments, references and biography.
+
+% If you have an EPS/PDF photo (graphicx package needed) extra braces are
+% needed around the contents of the optional argument to biography to prevent
+% the LaTeX parser from getting confused when it sees the complicated
+% \includegraphics command within an optional argument. (You could
+% create your own custom macro containing the \includegraphics command
+% to make things simpler here.)
+% \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
+% or if you just want to reserve a space for a photo:
+
+\begin{IEEEbiography}{Michael Shell}
+Biography text here.
+\end{IEEEbiography}
+
+% insert where needed to balance the two columns on the last page with
+% biographies
+%\newpage
+
+% if you will not have a photo at all:
+\begin{IEEEbiographynophoto}{John Doe}
+Biography text here.
+\end{IEEEbiographynophoto}
+
+% You can push biographies down or up by placing
+% a \vfill before or after them. The appropriate
+% use of \vfill depends on what kind of text is
+% on the last page and whether or not the columns
+% are being equalized.
+%\vfill
+
+\fi
+
+\end{document}
+
+
